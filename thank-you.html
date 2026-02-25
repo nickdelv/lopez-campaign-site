@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — Lisa Lopez for State Representative</title>
+<meta name="description" content="Thank you for signing up to support Lisa Lopez for Massachusetts State Representative in the 6th Norfolk District. Someone from the campaign will be in touch soon.">
+<meta property="og:title" content="Thank You — Lisa Lopez for State Representative">
+<meta property="og:description" content="Thank you for signing up to support Lisa Lopez for Massachusetts State Representative in the 6th Norfolk District.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lopezforrep.com/thank-you.html">
+<meta property="og:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
+<meta property="og:site_name" content="Lisa Lopez for State Representative">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thank You — Lisa Lopez for State Representative">
+<meta name="twitter:description" content="Thank you for signing up to support Lisa Lopez for Massachusetts State Representative in the 6th Norfolk District.">
+<meta name="twitter:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { min-height: 100vh; display: flex; flex-direction: column; }
+
+  /* ══ MAIN ══ */
+  main {
+    flex: 1;
+    background: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 96px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  main::before {
+    content: '';
+    position: absolute;
+    right: -100px; top: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: rgba(42,122,120,0.3);
+    pointer-events: none;
+  }
+  main::after {
+    content: '';
+    position: absolute;
+    left: -80px; bottom: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(42,122,120,0.2);
+    pointer-events: none;
+  }
+  .thank-you-inner {
+    max-width: 640px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .checkmark {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 36px;
+  }
+  .checkmark svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--amber);
+    stroke-width: 2.5;
+    fill: none;
+  }
+  .ty-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .ty-eyebrow-line { width: 24px; height: 2px; background: rgba(255,255,255,0.25); flex-shrink: 0; }
+  .ty-eyebrow-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+  .ty-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(52px, 6vw, 84px);
+    font-weight: 300;
+    line-height: 1.0;
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  .ty-headline em { font-style: italic; color: var(--teal-light); }
+  .ty-body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.65);
+    max-width: 480px;
+    margin: 0 auto 40px;
+  }
+  .ty-divider {
+    width: 48px;
+    height: 2px;
+    background: var(--amber);
+    margin: 0 auto 40px;
+    opacity: 0.6;
+  }
+  .ty-ctas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn-ghost {
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+
+  /* ══ ANIMATIONS ══ */
+  .thank-you-inner > * {
+    animation: fadeUp 0.7s ease forwards;
+    opacity: 0;
+  }
+  .thank-you-inner > *:nth-child(1) { animation-delay: 0.10s; }
+  .thank-you-inner > *:nth-child(2) { animation-delay: 0.20s; }
+  .thank-you-inner > *:nth-child(3) { animation-delay: 0.32s; }
+  .thank-you-inner > *:nth-child(4) { animation-delay: 0.44s; }
+  .thank-you-inner > *:nth-child(5) { animation-delay: 0.54s; }
+  .thank-you-inner > *:nth-child(6) { animation-delay: 0.62s; }
+
+  /* ══ RESPONSIVE ══ */
+  @media (max-width: 768px) {
+    main { padding: 72px 24px; }
+  }
+  @media (max-width: 480px) {
+    main { padding: 56px 20px; }
+    .ty-ctas { flex-direction: column; align-items: stretch; }
+    .btn-white, .btn-ghost { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+  <div class="thank-you-inner">
+    <div class="checkmark">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <div class="ty-eyebrow">
+      <div class="ty-eyebrow-line"></div>
+      <div class="ty-eyebrow-text">You're in</div>
+      <div class="ty-eyebrow-line"></div>
+    </div>
+    <h1 class="ty-headline">Thank you<br>for <em>stepping up.</em></h1>
+    <p class="ty-body">Someone from the campaign will be in touch soon to connect you with the right opportunity. In the meantime, the most powerful thing you can do is tell a neighbor.</p>
+    <div class="ty-divider"></div>
+    <div class="ty-ctas">
+      <a href="index.html" class="btn-white btn-white-teal">Back to Homepage</a>
+      <a href="https://secure.actblue.com" class="btn-ghost" target="_blank" rel="noopener noreferrer">Donate While You're Here</a>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="site.js"></script>
+</body>
+</html>
