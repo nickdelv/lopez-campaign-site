@@ -4,94 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get Involved — Lisa Lopez for State Representative</title>
+<meta name="description" content="Help elect Lisa Lopez to the Massachusetts State House. Volunteer to knock doors, phone bank, host events, or donate to support the 6th Norfolk District campaign in Canton, Stoughton, and Avon.">
+<meta property="og:title" content="Get Involved — Lisa Lopez for State Representative">
+<meta property="og:description" content="Canton, Stoughton, and Avon will decide this race — and the people who live there will win it. Sign up to volunteer or donate today.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lopezforrep.com/get-involved.html">
+<meta property="og:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
+<meta property="og:site_name" content="Lisa Lopez for State Representative">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Get Involved — Lisa Lopez for State Representative">
+<meta name="twitter:description" content="Canton, Stoughton, and Avon will decide this race — and the people who live there will win it. Sign up to volunteer or donate today.">
+<meta name="twitter:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="shared.css">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  :root {
-    --teal:      #1A5C5A;
-    --teal-mid:  #2A7A78;
-    --teal-pale: #EAF4F4;
-    --teal-light:#C8E0DF;
-    --amber:     #C17D3C;
-    --linen:     #F7F3EE;
-    --white:     #FDFAF7;
-    --black:     #1A1A1A;
-    --text:      #2C3E3E;
-    --text-lt:   #5a6e6d;
-  }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--white); }
-
-  /* ══ HEADER ══ */
-  header {
-    background: var(--teal-pale);
-    padding: 0 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 88px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid rgba(26,92,90,0.08);
-  }
-  .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .logo-lisa {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 3px;
-  }
-  .logo-lopez {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    line-height: 0.88;
-    color: var(--teal);
-  }
-  .logo-rule { width: 100%; height: 1.5px; background: rgba(26,92,90,0.15); margin: 5px 0; }
-  .logo-sub {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 9.5px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(26,92,90,0.4);
-  }
-  nav { display: flex; align-items: center; gap: 32px; }
-  nav a {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: rgba(26,92,90,0.6);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  nav a:hover { color: var(--teal); }
-  nav a.active { color: var(--teal); font-weight: 600; }
-  .nav-donate {
-    background: var(--amber);
-    color: #fff !important;
-    padding: 11px 24px;
-    font-weight: 600 !important;
-    transition: background 0.2s !important;
-  }
-  .nav-donate:hover { background: #a86a2e !important; }
-
   /* ══ PAGE HEADER ══ */
   .page-header {
     background: var(--teal);
@@ -165,31 +93,6 @@
   .ways-header {
     margin-bottom: 48px;
   }
-  .section-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 20px;
-  }
-  .section-eyebrow-line { width: 24px; height: 2px; background: var(--amber); flex-shrink: 0; }
-  .section-eyebrow-text {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--amber);
-  }
-  .section-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(36px, 3.4vw, 52px);
-    font-weight: 300;
-    line-height: 1.1;
-    color: var(--teal);
-    letter-spacing: -0.01em;
-  }
-  .section-headline em { font-style: italic; }
-
   .ways-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -424,192 +327,7 @@
     opacity: 0.7;
   }
 
-  /* ══ DUAL CTA ══ */
-  .dual-cta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 380px;
-  }
-  .cta-volunteer {
-    background: var(--teal);
-    padding: 80px 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .cta-volunteer::before {
-    content: '';
-    position: absolute;
-    bottom: -80px; right: -80px;
-    width: 280px; height: 280px;
-    border-radius: 50%;
-    background: rgba(42,122,120,0.35);
-  }
-  .cta-donate {
-    background: var(--amber);
-    padding: 80px 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .cta-donate::before {
-    content: '';
-    position: absolute;
-    top: -60px; left: -60px;
-    width: 220px; height: 220px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.07);
-  }
-  .cta-eyebrow {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.5);
-    margin-bottom: 14px;
-  }
-  .cta-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 3.2vw, 50px);
-    font-weight: 300;
-    color: #fff;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin-bottom: 16px;
-    position: relative;
-    z-index: 1;
-  }
-  .cta-headline em { font-style: italic; }
-  .cta-body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.62);
-    max-width: 380px;
-    margin-bottom: 32px;
-    position: relative;
-    z-index: 1;
-  }
-  .btn-white {
-    background: #fff;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11.5px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 16px 36px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    align-self: flex-start;
-    transition: opacity 0.2s;
-  }
-  .btn-white:hover { opacity: 0.9; }
-  .btn-white-teal { color: var(--teal); }
-  .btn-white-amber { color: var(--amber); }
-
-  /* ══ FOOTER ══ */
-  footer {
-    background: var(--black);
-    padding: 64px 64px 40px;
-  }
-  .footer-top {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr 1fr;
-    gap: 48px;
-    padding-bottom: 48px;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-  }
-  .footer-logo-lisa {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 3px;
-  }
-  .footer-logo-lopez {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 44px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: -0.01em;
-    line-height: 0.88;
-  }
-  .footer-logo-rule { width: 100%; height: 1.5px; background: rgba(255,255,255,0.12); margin: 7px 0; }
-  .footer-logo-sub {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.28);
-  }
-  .footer-tagline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    font-style: italic;
-    color: rgba(255,255,255,0.35);
-    margin-top: 20px;
-    line-height: 1.55;
-  }
-  .footer-col-title {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.3);
-    margin-bottom: 16px;
-  }
-  .footer-links { display: flex; flex-direction: column; gap: 10px; }
-  .footer-links a {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.5);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .footer-links a:hover { color: #fff; }
-  .footer-contact-item {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.5);
-    line-height: 1.65;
-    margin-bottom: 6px;
-  }
-  .footer-contact-item a { color: var(--amber); text-decoration: none; }
-  .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 24px;
-  }
-  .footer-legal {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.18);
-    line-height: 1.6;
-  }
-
   /* ══ ANIMATIONS ══ */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(18px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
   .page-header-inner > * {
     animation: fadeUp 0.7s ease forwards;
     opacity: 0;
@@ -617,25 +335,36 @@
   .page-header-inner > *:nth-child(1) { animation-delay: 0.1s; }
   .page-header-inner > *:nth-child(2) { animation-delay: 0.24s; }
   .page-header-inner > *:nth-child(3) { animation-delay: 0.38s; }
+
+  /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
+  @media (max-width: 1024px) {
+    .page-header { padding: 80px 40px 72px; }
+    .ways { padding: 80px 40px; }
+    .ways-grid { grid-template-columns: 1fr 1fr; }
+    .form-section { padding: 80px 40px; gap: 56px; }
+  }
+
+  /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
+  @media (max-width: 768px) {
+    .page-header { padding: 56px 24px 48px; }
+    .page-header-headline { font-size: clamp(44px, 9vw, 72px); }
+    .ways { padding: 64px 24px; }
+    .form-section { grid-template-columns: 1fr; padding: 64px 24px; gap: 48px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+
+  /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
+  @media (max-width: 480px) {
+    .page-header { padding: 40px 20px 36px; }
+    .ways { padding: 48px 20px; }
+    .ways-grid { grid-template-columns: 1fr; }
+    .form-section { padding: 48px 20px; }
+  }
 </style>
 </head>
 <body>
 
-<!-- ═══ HEADER ═══ -->
-<header>
-  <a class="logo" href="index.html">
-    <div class="logo-lisa">Lisa</div>
-    <div class="logo-lopez">Lopez</div>
-    <div class="logo-rule"></div>
-    <div class="logo-sub">For State Rep</div>
-  </a>
-  <nav>
-    <a href="index.html#why">Why Lisa</a>
-    <a href="about.html">About</a>
-    <a href="get-involved.html" class="active">Get Involved</a>
-    <a href="https://secure.actblue.com" class="nav-donate">Donate</a>
-  </nav>
-</header>
+<div id="site-header"></div>
 
 <!-- ═══ PAGE HEADER ═══ -->
 <section class="page-header">
@@ -706,30 +435,30 @@
 
     <div class="form-row">
       <div class="form-field">
-        <label>First Name <span class="required">*</span></label>
-        <input type="text" name="first_name" placeholder="Jane" required>
+        <label for="first_name">First Name <span class="required">*</span></label>
+        <input type="text" id="first_name" name="first_name" placeholder="Jane" required>
       </div>
       <div class="form-field">
-        <label>Last Name <span class="required">*</span></label>
-        <input type="text" name="last_name" placeholder="Smith" required>
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div class="form-field">
-        <label>Email Address <span class="required">*</span></label>
-        <input type="email" name="email" placeholder="jane@example.com" required>
-      </div>
-      <div class="form-field">
-        <label>Phone Number</label>
-        <input type="tel" name="phone" placeholder="(617) 555-0100">
+        <label for="last_name">Last Name <span class="required">*</span></label>
+        <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
       </div>
     </div>
 
     <div class="form-row">
       <div class="form-field">
-        <label>Your Town <span class="required">*</span></label>
-        <select name="town" required>
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(617) 555-0100">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="town">Your Town <span class="required">*</span></label>
+        <select id="town" name="town" required>
           <option value="" disabled selected>Select your town</option>
           <option value="canton">Canton</option>
           <option value="stoughton">Stoughton</option>
@@ -772,8 +501,8 @@
     </div>
 
     <div class="form-field">
-      <label>Anything else you'd like us to know?</label>
-      <textarea name="message" placeholder="Skills, availability, questions — whatever feels relevant."></textarea>
+      <label for="message">Anything else you'd like us to know?</label>
+      <textarea id="message" name="message" placeholder="Skills, availability, questions — whatever feels relevant."></textarea>
     </div>
 
     <div>
@@ -797,52 +526,12 @@
     <div class="cta-eyebrow">Support the Campaign</div>
     <h2 class="cta-headline">Can't volunteer?<br><em>Donate instead.</em></h2>
     <p class="cta-body">Every contribution — large or small — helps us reach more voters across Canton, Stoughton, and Avon.</p>
-    <a href="https://secure.actblue.com" class="btn-white btn-white-amber">Donate via ActBlue</a>
+    <a href="https://secure.actblue.com" class="btn-white btn-white-amber" target="_blank" rel="noopener noreferrer">Donate via ActBlue</a>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
-<footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-logo-lisa">Lisa</div>
-      <div class="footer-logo-lopez">Lopez</div>
-      <div class="footer-logo-rule"></div>
-      <div class="footer-logo-sub">For State Rep</div>
-      <p class="footer-tagline">"These are no ordinary times."</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Quick Links</div>
-      <div class="footer-links">
-        <a href="index.html#why">Why I'm Running</a>
-        <a href="about.html">About Lisa</a>
-        <a href="get-involved.html">Get Involved</a>
-        <a href="https://secure.actblue.com">Donate</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">The District</div>
-      <div class="footer-links">
-        <a href="#">Canton</a>
-        <a href="#">Stoughton</a>
-        <a href="#">Avon</a>
-        <a href="#">6th Norfolk District</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Contact</div>
-      <div class="footer-contact-item"><a href="mailto:info@lopezforrep.com">info@lopezforrep.com</a></div>
-      <div class="footer-contact-item">Canton, Massachusetts</div>
-      <div class="footer-contact-item" style="margin-top:14px;"><a href="https://lopezforrep.com" style="color:rgba(255,255,255,0.3);font-size:12px;">lopezforrep.com</a></div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-legal">
-      Paid for by Lisa Lopez for State Representative.<br>
-      Not authorized by any candidate or candidate's committee.
-    </div>
-  </div>
-</footer>
+<div id="site-footer"></div>
 
+<script src="site.js"></script>
 </body>
 </html>
