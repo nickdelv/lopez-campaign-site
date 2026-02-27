@@ -1,678 +1,977 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Lisa Lopez — 6th Norfolk District</title>
-<meta name="description" content="Learn about Lisa Lopez — 42 years in Canton, Yale Law School graduate, former Chief Legal Officer at Haemonetics Corporation, and Canton Select Board member now running for Massachusetts State Representative in the 6th Norfolk District.">
-<meta property="og:title" content="About Lisa Lopez — 6th Norfolk District">
-<meta property="og:description" content="42 years in Canton. A Yale-trained attorney, corporate executive, and tireless community servant — now ready to take that experience to Beacon Hill full time.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lopezforrep.com/about.html">
-<meta property="og:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
-<meta property="og:site_name" content="Lisa Lopez for State Representative">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About Lisa Lopez — 6th Norfolk District">
-<meta name="twitter:description" content="42 years in Canton. A Yale-trained attorney, corporate executive, and tireless community servant — now ready to take that experience to Beacon Hill full time.">
-<meta name="twitter:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="shared.css">
-<style>
-  /* ══ PAGE HEADER ══ */
-  .page-header {
-    background: var(--teal-pale);
-    padding: 80px 64px 72px;
-    display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 80px;
-    align-items: end;
-    position: relative;
-    overflow: hidden;
-  }
-  .page-header::after {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 4px;
-    background: var(--amber);
-  }
-  .page-header-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 20px;
-  }
-  .eyebrow-line { width: 28px; height: 2px; background: var(--amber); flex-shrink: 0; }
-  .eyebrow-text {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--teal-mid);
-  }
-  .page-header-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(52px, 5.5vw, 84px);
-    font-weight: 300;
-    line-height: 1.0;
-    color: var(--teal);
-    letter-spacing: -0.02em;
-  }
-  .page-header-headline em {
-    font-style: italic;
-    color: var(--teal-mid);
-  }
-  .page-header-sub {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.7;
-    color: var(--text-lt);
-    margin-top: 20px;
-    max-width: 540px;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Lisa Lopez — 6th Norfolk District</title>
+    <meta
+      name="description"
+      content="Learn about Lisa Lopez — 42 years in Canton, Yale Law School graduate, former Chief Legal Officer at Haemonetics Corporation, and Canton Select Board member now running for Massachusetts State Representative in the 6th Norfolk District."
+    />
+    <meta
+      property="og:title"
+      content="About Lisa Lopez — 6th Norfolk District"
+    />
+    <meta
+      property="og:description"
+      content="42 years in Canton. A Yale-trained attorney, corporate executive, and tireless community servant — now ready to take that experience to Beacon Hill full time."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lopezforrep.com/about.html" />
+    <meta
+      property="og:image"
+      content="https://lopezforrep.com/assets/images/lisa-headshot.png"
+    />
+    <meta
+      property="og:site_name"
+      content="Lisa Lopez for State Representative"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="About Lisa Lopez — 6th Norfolk District"
+    />
+    <meta
+      name="twitter:description"
+      content="42 years in Canton. A Yale-trained attorney, corporate executive, and tireless community servant — now ready to take that experience to Beacon Hill full time."
+    />
+    <meta
+      name="twitter:image"
+      content="https://lopezforrep.com/assets/images/lisa-headshot.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="shared.css" />
+    <style>
+      /* ══ PAGE HEADER ══ */
+      .page-header {
+        background: var(--teal-pale);
+        padding: 80px 64px 72px;
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 80px;
+        align-items: end;
+        position: relative;
+        overflow: hidden;
+      }
+      .page-header::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--amber);
+      }
+      .page-header-eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+      .eyebrow-line {
+        width: 28px;
+        height: 2px;
+        background: var(--amber);
+        flex-shrink: 0;
+      }
+      .eyebrow-text {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--teal-mid);
+      }
+      .page-header-headline {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(52px, 5.5vw, 84px);
+        font-weight: 300;
+        line-height: 1;
+        color: var(--teal);
+        letter-spacing: -0.02em;
+      }
+      .page-header-headline em {
+        font-style: italic;
+        color: var(--teal-mid);
+      }
+      .page-header-sub {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: var(--text-lt);
+        margin-top: 20px;
+        max-width: 540px;
+      }
 
-  /* Jump nav */
-  .page-header-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-self: end;
-    padding-bottom: 4px;
-  }
-  .page-header-nav-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 9.5px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: rgba(26,92,90,0.4);
-    margin-bottom: 12px;
-  }
-  .jump-link {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--teal-mid);
-    text-decoration: none;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(26,92,90,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: color 0.2s;
-  }
-  .jump-link:last-child { border-bottom: none; }
-  .jump-link:hover { color: var(--teal); }
-  .jump-link::after { content: '↓'; font-size: 11px; opacity: 0.4; }
+      /* Jump nav */
+      .page-header-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-self: end;
+        padding-bottom: 4px;
+      }
+      .page-header-nav-label {
+        font-family: "DM Sans", sans-serif;
+        font-size: 9.5px;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: rgba(26, 92, 90, 0.4);
+        margin-bottom: 12px;
+      }
+      .jump-link {
+        font-family: "DM Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--teal-mid);
+        text-decoration: none;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(26, 92, 90, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: color 0.2s;
+      }
+      .jump-link:last-child {
+        border-bottom: none;
+      }
+      .jump-link:hover {
+        color: var(--teal);
+      }
+      .jump-link::after {
+        content: "↓";
+        font-size: 11px;
+        opacity: 0.4;
+      }
 
-  .section-headline { margin-bottom: 32px; }
-  .prose {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.85;
-    color: var(--text-lt);
-  }
-  .prose p + p { margin-top: 20px; }
-  .prose strong {
-    font-weight: 600;
-    color: var(--text);
-  }
+      .section-headline {
+        margin-bottom: 32px;
+      }
+      .prose {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.85;
+        color: var(--text-lt);
+      }
+      .prose p + p {
+        margin-top: 20px;
+      }
+      .prose strong {
+        font-weight: 600;
+        color: var(--text);
+      }
 
-  /* ══ EARLY LIFE ══ */
-  .early-life {
-    background: var(--white);
-    padding: 96px 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .pull-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 1.55;
-    color: var(--teal-mid);
-    padding: 28px 0 28px 24px;
-    border-left: 3px solid var(--amber);
-    margin-top: 36px;
-  }
+      /* ══ EARLY LIFE ══ */
+      .early-life {
+        background: var(--white);
+        padding: 96px 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .pull-quote {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.55;
+        color: var(--teal-mid);
+        padding: 28px 0 28px 24px;
+        border-left: 3px solid var(--amber);
+        margin-top: 36px;
+      }
 
-  /* ══ CAREER ══ */
-  .career {
-    background: var(--linen);
-    padding: 96px 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .career-right { padding-top: 8px; }
+      /* ══ CAREER ══ */
+      .career {
+        background: var(--linen);
+        padding: 96px 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .career-right {
+        padding-top: 8px;
+      }
 
-  /* Haemonetics callout */
-  .company-callout {
-    background: var(--white);
-    border-left: 3px solid var(--teal);
-    padding: 28px 32px;
-    margin-top: 36px;
-  }
-  .company-callout-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 9.5px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--teal-mid);
-    margin-bottom: 6px;
-  }
-  .company-callout-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--teal);
-    line-height: 1.1;
-    margin-bottom: 10px;
-  }
-  .company-callout-detail {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 1.65;
-    color: var(--text-lt);
-  }
+      /* Haemonetics callout */
+      .company-callout {
+        background: var(--white);
+        border-left: 3px solid var(--teal);
+        padding: 28px 32px;
+        margin-top: 36px;
+      }
+      .company-callout-label {
+        font-family: "DM Sans", sans-serif;
+        font-size: 9.5px;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--teal-mid);
+        margin-bottom: 6px;
+      }
+      .company-callout-name {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--teal);
+        line-height: 1.1;
+        margin-bottom: 10px;
+      }
+      .company-callout-detail {
+        font-family: "DM Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.65;
+        color: var(--text-lt);
+      }
 
-  /* ══ PUBLIC SERVICE ══ */
-  .service {
-    background: var(--white);
-    padding: 96px 64px;
-  }
-  .service-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
+      /* ══ PUBLIC SERVICE ══ */
+      .service {
+        background: var(--white);
+        padding: 96px 64px;
+      }
+      .service-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
 
-  /* Timeline */
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 8px;
-  }
-  .timeline-item {
-    display: flex;
-    gap: 24px;
-    position: relative;
-  }
-  .timeline-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    width: 48px;
-  }
-  .timeline-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--teal-light);
-    border: 2px solid var(--teal);
-    flex-shrink: 0;
-    margin-top: 4px;
-    transition: background 0.2s;
-  }
-  .timeline-item:hover .timeline-dot { background: var(--amber); border-color: var(--amber); }
-  .timeline-line {
-    width: 1.5px;
-    flex: 1;
-    background: rgba(26,92,90,0.12);
-    margin: 4px 0;
-    min-height: 24px;
-  }
-  .timeline-item:last-child .timeline-line { display: none; }
-  .timeline-content {
-    padding-bottom: 36px;
-    flex: 1;
-  }
-  .timeline-item:last-child .timeline-content { padding-bottom: 0; }
-  .timeline-year {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 4px;
-  }
-  .timeline-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--teal);
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-  .timeline-desc {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.7;
-    color: var(--text-lt);
-  }
+      /* Timeline */
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 8px;
+      }
+      .timeline-item {
+        display: flex;
+        gap: 24px;
+        position: relative;
+      }
+      .timeline-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        width: 48px;
+      }
+      .timeline-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--teal-light);
+        border: 2px solid var(--teal);
+        flex-shrink: 0;
+        margin-top: 4px;
+        transition: background 0.2s;
+      }
+      .timeline-item:hover .timeline-dot {
+        background: var(--amber);
+        border-color: var(--amber);
+      }
+      .timeline-line {
+        width: 1.5px;
+        flex: 1;
+        background: rgba(26, 92, 90, 0.12);
+        margin: 4px 0;
+        min-height: 24px;
+      }
+      .timeline-item:last-child .timeline-line {
+        display: none;
+      }
+      .timeline-content {
+        padding-bottom: 36px;
+        flex: 1;
+      }
+      .timeline-item:last-child .timeline-content {
+        padding-bottom: 0;
+      }
+      .timeline-year {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--amber);
+        margin-bottom: 4px;
+      }
+      .timeline-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--teal);
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+      .timeline-desc {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: var(--text-lt);
+      }
 
-  /* ══ THE SELECT BOARD ARC — dark feature section ══ */
-  .arc {
-    background: var(--teal);
-    padding: 96px 64px;
-    position: relative;
-    overflow: hidden;
-  }
-  .arc::before {
-    content: '';
-    position: absolute;
-    right: -100px; bottom: -100px;
-    width: 400px; height: 400px;
-    border-radius: 50%;
-    background: rgba(42,122,120,0.3);
-    pointer-events: none;
-  }
-  .arc-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-  .arc-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(38px, 3.8vw, 58px);
-    font-weight: 300;
-    color: #fff;
-    line-height: 1.08;
-    letter-spacing: -0.01em;
-    margin-bottom: 0;
-  }
-  .arc-headline em { font-style: italic; color: var(--teal-light); }
-  .arc-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 16px;
-  }
-  .arc-eyebrow-line { width: 24px; height: 2px; background: rgba(255,255,255,0.25); }
-  .arc-eyebrow-text {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.45);
-  }
-  .arc-body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.8;
-    color: rgba(255,255,255,0.62);
-  }
-  .arc-body p + p { margin-top: 18px; }
-  .arc-pull {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 1.5;
-    color: rgba(255,255,255,0.85);
-    padding: 24px 0 24px 22px;
-    border-left: 3px solid var(--amber);
-    margin-top: 28px;
-  }
+      /* ══ THE SELECT BOARD ARC — dark feature section ══ */
+      .arc {
+        background: var(--teal);
+        padding: 96px 64px;
+        position: relative;
+        overflow: hidden;
+      }
+      .arc::before {
+        content: "";
+        position: absolute;
+        right: -100px;
+        bottom: -100px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: rgba(42, 122, 120, 0.3);
+        pointer-events: none;
+      }
+      .arc-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+      }
+      .arc-headline {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(38px, 3.8vw, 58px);
+        font-weight: 300;
+        color: #fff;
+        line-height: 1.08;
+        letter-spacing: -0.01em;
+        margin-bottom: 0;
+      }
+      .arc-headline em {
+        font-style: italic;
+        color: var(--teal-light);
+      }
+      .arc-eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .arc-eyebrow-line {
+        width: 24px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.25);
+      }
+      .arc-eyebrow-text {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.45);
+      }
+      .arc-body {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.62);
+      }
+      .arc-body p + p {
+        margin-top: 18px;
+      }
+      .arc-pull {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 22px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.85);
+        padding: 24px 0 24px 22px;
+        border-left: 3px solid var(--amber);
+        margin-top: 28px;
+      }
 
-  /* ══ WHERE SHE STANDS NOW ══ */
-  .now {
-    background: var(--linen);
-    padding: 96px 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
+      /* ══ WHERE SHE STANDS NOW ══ */
+      .now {
+        background: var(--linen);
+        padding: 96px 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
 
-  /* Current roles grid */
-  .roles-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin-top: 8px;
-  }
-  .role-item {
-    background: var(--white);
-    padding: 22px 26px;
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    transition: background 0.2s;
-  }
-  .role-item:hover { background: var(--teal-pale); }
-  .role-accent {
-    width: 3px;
-    height: 100%;
-    background: var(--amber);
-    flex-shrink: 0;
-    min-height: 40px;
-    align-self: stretch;
-  }
-  .role-content { flex: 1; }
-  .role-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--teal);
-    line-height: 1.2;
-    margin-bottom: 3px;
-  }
-  .role-org {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    color: var(--text-lt);
-  }
+      /* Current roles grid */
+      .roles-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin-top: 8px;
+      }
+      .role-item {
+        background: var(--white);
+        padding: 22px 26px;
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        transition: background 0.2s;
+      }
+      .role-item:hover {
+        background: var(--teal-pale);
+      }
+      .role-accent {
+        width: 3px;
+        height: 100%;
+        background: var(--amber);
+        flex-shrink: 0;
+        min-height: 40px;
+        align-self: stretch;
+      }
+      .role-content {
+        flex: 1;
+      }
+      .role-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--teal);
+        line-height: 1.2;
+        margin-bottom: 3px;
+      }
+      .role-org {
+        font-family: "DM Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        color: var(--text-lt);
+      }
 
-  /* ══ ANIMATIONS ══ */
-  .page-header-content > * {
-    animation: fadeUp 0.7s ease forwards;
-    opacity: 0;
-  }
-  .page-header-content > *:nth-child(1) { animation-delay: 0.1s; }
-  .page-header-content > *:nth-child(2) { animation-delay: 0.24s; }
-  .page-header-content > *:nth-child(3) { animation-delay: 0.38s; }
+      /* ══ ANIMATIONS ══ */
+      .page-header-content > * {
+        animation: fadeUp 0.7s ease forwards;
+        opacity: 0;
+      }
+      .page-header-content > *:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .page-header-content > *:nth-child(2) {
+        animation-delay: 0.24s;
+      }
+      .page-header-content > *:nth-child(3) {
+        animation-delay: 0.38s;
+      }
 
-  /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
-  @media (max-width: 1024px) {
-    .page-header { grid-template-columns: 1fr; padding: 72px 40px 64px; }
-    .page-header-nav { display: none; }
-    .early-life, .career, .now { padding: 80px 40px; gap: 48px; }
-    .service { padding: 80px 40px; }
-    .service-inner { gap: 48px; }
-    .arc { padding: 80px 40px; }
-    .arc-inner { gap: 48px; }
-  }
+      /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
+      @media (max-width: 1024px) {
+        .page-header {
+          grid-template-columns: 1fr;
+          padding: 72px 40px 64px;
+        }
+        .page-header-nav {
+          display: none;
+        }
+        .early-life,
+        .career,
+        .now {
+          padding: 80px 40px;
+          gap: 48px;
+        }
+        .service {
+          padding: 80px 40px;
+        }
+        .service-inner {
+          gap: 48px;
+        }
+        .arc {
+          padding: 80px 40px;
+        }
+        .arc-inner {
+          gap: 48px;
+        }
+      }
 
-  /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
-  @media (max-width: 768px) {
-    .page-header { padding: 48px 24px 40px; }
-    .page-header-headline { font-size: clamp(44px, 9vw, 72px); }
-    .early-life, .career, .now { grid-template-columns: 1fr; padding: 64px 24px; gap: 40px; }
-    .service { padding: 64px 24px; }
-    .service-inner { grid-template-columns: 1fr; gap: 40px; }
-    .arc { padding: 64px 24px; }
-    .arc-inner { grid-template-columns: 1fr; gap: 40px; }
-  }
+      /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 48px 24px 40px;
+        }
+        .page-header-headline {
+          font-size: clamp(44px, 9vw, 72px);
+        }
+        .early-life,
+        .career,
+        .now {
+          grid-template-columns: 1fr;
+          padding: 64px 24px;
+          gap: 40px;
+        }
+        .service {
+          padding: 64px 24px;
+        }
+        .service-inner {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .arc {
+          padding: 64px 24px;
+        }
+        .arc-inner {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+      }
 
-  /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
-  @media (max-width: 480px) {
-    .page-header { padding: 36px 20px 32px; }
-    .early-life, .career, .now { padding: 48px 20px; }
-    .service, .arc { padding: 48px 20px; }
-  }
-</style>
-</head>
-<body>
+      /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
+      @media (max-width: 480px) {
+        .page-header {
+          padding: 36px 20px 32px;
+        }
+        .early-life,
+        .career,
+        .now {
+          padding: 48px 20px;
+        }
+        .service,
+        .arc {
+          padding: 48px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site-header"></div>
 
-<div id="site-header"></div>
-
-<!-- ═══ PAGE HEADER ═══ -->
-<section class="page-header">
-  <div class="page-header-content">
-    <div class="page-header-eyebrow">
-      <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">About Lisa Lopez</div>
-    </div>
-    <h1 class="page-header-headline">A neighbor.<br>A fighter.<br><em>A proven record.</em></h1>
-    <p class="page-header-sub">42 years in Canton. A Yale-trained attorney, corporate executive, and tireless community servant — now ready to take that experience to Beacon Hill full time.</p>
-  </div>
-  <div class="page-header-nav">
-    <div class="page-header-nav-label">On this page</div>
-    <a class="jump-link" href="#early-life">Early Life &amp; Family</a>
-    <a class="jump-link" href="#career">Career</a>
-    <a class="jump-link" href="#service">Community Service</a>
-    <a class="jump-link" href="#select-board">The Select Board</a>
-    <a class="jump-link" href="#now">Where She Stands Now</a>
-  </div>
-</section>
-
-<!-- ═══ EARLY LIFE ═══ -->
-<section class="early-life" id="early-life">
-  <div>
-    <div class="section-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">Early Life &amp; Family</div>
-    </div>
-    <h2 class="section-headline">Roots in<br><em>service and community</em></h2>
-    <blockquote class="pull-quote">
-      "Though I never shared my parents' politics, they were my role models for community and government service, and love of country."
-    </blockquote>
-  </div>
-  <div>
-    <div class="prose">
-      <p>Lisa grew up the oldest of five children in a middle-class family in New Jersey. Her father — born in the United States, the only child of a Puerto Rican mother and a Mexican father who himself had 16 siblings — was a traditional Hispanic husband and father. Her parents instilled in her a deep sense of civic responsibility and love of country that has shaped everything she has done since.</p>
-      <p>She attended <strong>The Ohio State University</strong> for her undergraduate education — a decision that came with its own lesson. Her first-choice school, the University of Michigan, had raised its tuition by $500 between the time she applied and the time she was accepted. Ohio State it was. It was the kind of practical constraint that millions of families navigate, and it left its mark.</p>
-      <p>From Ohio State, Lisa went on to earn her law degree from <strong>Yale Law School</strong>, one of the most selective institutions in the country. After graduating, she relocated to Massachusetts — where she has lived, worked, and raised her three children ever since.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ CAREER ═══ -->
-<section class="career" id="career">
-  <div>
-    <div class="section-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">Career</div>
-    </div>
-    <h2 class="section-headline">Building something<br><em>that matters</em></h2>
-    <div class="prose">
-      <p>After years at a downtown Boston law firm, Lisa joined one of her clients — a privately held medical device company based in Braintree. It turned out to be one of the defining decisions of her professional life.</p>
-      <p>For nearly <strong>25 years</strong>, she served as an executive and ultimately Chief Legal Officer at <strong>Haemonetics Corporation</strong>, a global medical device company whose products improve outcomes for surgical and cancer patients around the world. She held responsibilities far beyond the legal — including human resources, employee health and safety, clinical and regulatory affairs, investor relations, and internal audit.</p>
-      <p>Throughout that time, she was the <strong>only woman on the executive team</strong>. She helped build a business from a regional firm into a global operation. It was thrilling, demanding work — and it taught her that results come from persistence, collaboration, and showing up every single day.</p>
-    </div>
-  </div>
-  <div class="career-right">
-    <img src="assets/images/lisa-headshot.png" alt="Lisa Lopez, former Chief Legal Officer at Haemonetics Corporation" style="width:100%; max-width:380px; display:block; filter:drop-shadow(8px 8px 0 rgba(26,92,90,0.12));">
-    <div class="company-callout" style="max-width:380px;">
-      <div class="company-callout-label">25 Years At</div>
-      <div class="company-callout-name">Haemonetics Corporation</div>
-      <div class="company-callout-detail">Chief Legal Officer · Global medical device company · Braintree, MA · Improved outcomes for surgical and cancer patients worldwide</div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ PUBLIC SERVICE ═══ -->
-<section class="service" id="service">
-  <div class="service-inner">
-    <div>
-      <div class="section-eyebrow">
-        <div class="section-eyebrow-line"></div>
-        <div class="section-eyebrow-text">Community Service</div>
-      </div>
-      <h2 class="section-headline">A lifetime of<br><em>showing up</em></h2>
-      <div class="prose">
-        <p>Lisa's commitment to Canton didn't begin when she decided to run for office. It began decades earlier, quietly, through the kinds of sustained civic engagement that rarely makes headlines but shapes communities over time.</p>
-        <p>She has served in her parish, championed the <strong>Community Preservation Act</strong> and chaired the initial committee for many years, and worked tirelessly to bring the <strong>Paul Revere Heritage Site</strong> to life using CPA funds. When the community needed a new pool, she led the ballot campaign to fund it.</p>
-        <p>Immediately after Donald Trump's first election, she volunteered as a <strong>pro bono immigration attorney</strong> — putting her Yale law degree in service of the most vulnerable residents in her community. She has served as a trustee for <strong>Cathedral High School</strong>, a Boston school serving mostly first-generation college-bound urban youth.</p>
-      </div>
-    </div>
-    <div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-year">Ongoing</div>
-            <div class="timeline-title">Community Preservation Act</div>
-            <div class="timeline-desc">Championed Canton's adoption and served as initial committee chair for many years. Helped fund the Paul Revere Heritage Site.</div>
-          </div>
+    <!-- ═══ PAGE HEADER ═══ -->
+    <section class="page-header">
+      <div class="page-header-content">
+        <div class="page-header-eyebrow">
+          <div class="eyebrow-line"></div>
+          <div class="eyebrow-text">About Lisa Lopez</div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-year">Post-2016</div>
-            <div class="timeline-title">Pro Bono Immigration Attorney</div>
-            <div class="timeline-desc">Volunteered her legal expertise to represent immigrants after Trump's first election — putting credentials in service of community.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-year">Ongoing</div>
-            <div class="timeline-title">Cathedral High School Trustee</div>
-            <div class="timeline-desc">Board trustee for a Boston school serving mostly first-generation college-bound urban youth.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-year">2023–Present</div>
-            <div class="timeline-title">Move the Vote Co-Leader</div>
-            <div class="timeline-desc">Co-led a grassroots initiative collecting over 2,000 signatures and winning a ballot campaign to align local election timing.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-year">2024–Present</div>
-            <div class="timeline-title">Canton Housing Authority Chair</div>
-            <div class="timeline-desc">Elected in 2024 with the most votes of any candidate in a contested local race. Now chairs both the Housing Authority and Affordable Housing Trust.</div>
-          </div>
-        </div>
+        <h1 class="page-header-headline">
+          A neighbor.<br />A fighter.<br /><em>A proven record.</em>
+        </h1>
+        <p class="page-header-sub">
+          42 years in Canton. A Yale-trained attorney, corporate executive, and
+          tireless community servant — now ready to take that experience to
+          Beacon Hill full time.
+        </p>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="page-header-nav">
+        <div class="page-header-nav-label">On this page</div>
+        <a class="jump-link" href="#early-life">Early Life &amp; Family</a>
+        <a class="jump-link" href="#career">Career</a>
+        <a class="jump-link" href="#service">Community Service</a>
+        <a class="jump-link" href="#select-board">The Select Board</a>
+        <a class="jump-link" href="#now">Where She Stands Now</a>
+      </div>
+    </section>
 
-<!-- ═══ THE SELECT BOARD ARC ═══ -->
-<section class="arc" id="select-board">
-  <div class="arc-inner">
-    <div>
-      <div class="arc-eyebrow">
-        <div class="arc-eyebrow-line"></div>
-        <div class="arc-eyebrow-text">The Select Board</div>
+    <!-- ═══ EARLY LIFE ═══ -->
+    <section class="early-life" id="early-life">
+      <div>
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">Early Life &amp; Family</div>
+        </div>
+        <h2 class="section-headline">
+          Roots in<br /><em>service and community</em>
+        </h2>
+        <blockquote class="pull-quote">
+          "Though I never shared my parents' politics, they were my role models
+          for community and government service, and love of country."
+        </blockquote>
       </div>
-      <h2 class="arc-headline">She lost.<br>She ran again.<br><em>She won.</em></h2>
-    </div>
-    <div>
-      <div class="arc-body">
-        <p>In 2019, Lisa ran for Canton's Select Board and lost — by a handful of votes. Most people would have walked away. She doubled down.</p>
-        <p>The following year she ran again, and won — becoming only the <strong style="color:#fff;">third woman in history</strong> to serve on Canton's Select Board. During her tenure she championed the town's <strong style="color:#fff;">Municipal Electrical Aggregation program</strong> (Canton Electrical Choice), delivering cleaner and cheaper energy to residents. She created the <strong style="color:#fff;">Affordable Housing Trust</strong> to address housing instability among seniors, veterans, disabled adults, and young families.</p>
-        <p>During the COVID years she collaborated with the Department of Health to run regular informational sessions and coordinate free vaccine distribution across the community.</p>
-        <p>She lost her bid for re-election in 2023 — and kept serving anyway, because that's who she is.</p>
-      </div>
-      <blockquote class="arc-pull">
-        "Covid demonstrated Canton at its best. Municipal employees and residents pulled together to keep everyone safe."
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ WHERE SHE STANDS NOW ═══ -->
-<section class="now" id="now">
-  <div>
-    <div class="section-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">Where She Stands Now</div>
-    </div>
-    <h2 class="section-headline">Retired. Ready.<br><em>All in.</em></h2>
-    <div class="prose">
-      <p>Lisa is retired from all paid, private sector work. This isn't a campaign she's fitting around other commitments — it's a full-time commitment to becoming the most effective, available, and responsive State Representative possible for Canton, Stoughton, and Avon.</p>
-      <p>She brings to this race something rare: the legal expertise of a Yale-trained attorney, the operational experience of a 25-year corporate executive, and the community credibility of someone who has shown up for Canton for four decades — through wins and losses alike.</p>
-      <p>The 6th Norfolk District deserves a representative who is in it completely. That's exactly what Lisa Lopez is offering.</p>
-    </div>
-  </div>
-  <div>
-    <div class="section-eyebrow" style="margin-bottom:20px;">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">Current Roles</div>
-    </div>
-    <div class="roles-grid">
-      <div class="role-item">
-        <div class="role-accent"></div>
-        <div class="role-content">
-          <div class="role-title">Chair, Canton Housing Authority</div>
-          <div class="role-org">Elected 2024 · Most votes of any contested candidate</div>
+      <div>
+        <div class="prose">
+          <p>
+            Lisa grew up the oldest of five children in a middle-class family in
+            New Jersey. Her father — born in the United States, the only child
+            of a Puerto Rican mother and a Mexican father who himself had 16
+            siblings — was a traditional Hispanic husband and father. Her
+            parents instilled in her a deep sense of civic responsibility and
+            love of country that has shaped everything she has done since.
+          </p>
+          <p>
+            She attended <strong>The Ohio State University</strong> for her
+            undergraduate education — a decision that came with its own lesson.
+            Her first-choice school, the University of Michigan, had raised its
+            tuition by $500 between the time she applied and the time she was
+            accepted. Ohio State it was. It was the kind of practical constraint
+            that millions of families navigate, and it left its mark.
+          </p>
+          <p>
+            From Ohio State, Lisa went on to earn her law degree from
+            <strong>Yale Law School</strong>, one of the most selective
+            institutions in the country. After graduating, she relocated to
+            Massachusetts — where she has lived, worked, and raised her three
+            children ever since.
+          </p>
         </div>
       </div>
-      <div class="role-item">
-        <div class="role-accent"></div>
-        <div class="role-content">
-          <div class="role-title">Chair, Affordable Housing Trust</div>
-          <div class="role-org">Canton, Massachusetts</div>
-        </div>
-      </div>
-      <div class="role-item">
-        <div class="role-accent"></div>
-        <div class="role-content">
-          <div class="role-title">Pro Bono Immigration Attorney</div>
-          <div class="role-org">Serving vulnerable residents since 2016</div>
-        </div>
-      </div>
-      <div class="role-item">
-        <div class="role-accent"></div>
-        <div class="role-content">
-          <div class="role-title">Co-Leader, Move the Vote</div>
-          <div class="role-org">Grassroots civic participation initiative</div>
-        </div>
-      </div>
-      <div class="role-item">
-        <div class="role-accent"></div>
-        <div class="role-content">
-          <div class="role-title">Trustee, Cathedral High School</div>
-          <div class="role-org">Boston · First-generation college-bound youth</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ═══ DUAL CTA ═══ -->
-<section class="dual-cta">
-  <div class="cta-volunteer">
-    <div class="cta-eyebrow">Join the Campaign</div>
-    <h2 class="cta-headline">Ready to<br><em>get involved?</em></h2>
-    <p class="cta-body">Knock doors, make calls, or host a neighbor conversation. Every hour you give moves us closer to Beacon Hill.</p>
-    <a href="get-involved.html" class="btn-white btn-white-teal">Volunteer Now</a>
-  </div>
-  <div class="cta-donate">
-    <div class="cta-eyebrow">Support the Campaign</div>
-    <h2 class="cta-headline">Chip in to<br><em>make it happen.</em></h2>
-    <p class="cta-body">Local campaigns run on local support. Any amount helps us reach voters across Canton, Stoughton, and Avon.</p>
-    <a href="https://secure.actblue.com" class="btn-white btn-white-amber" target="_blank" rel="noopener noreferrer">Donate via ActBlue</a>
-  </div>
-</section>
+    <!-- ═══ CAREER ═══ -->
+    <section class="career" id="career">
+      <div>
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">Career</div>
+        </div>
+        <h2 class="section-headline">
+          Building something<br /><em>that matters</em>
+        </h2>
+        <div class="prose">
+          <p>
+            After years at a downtown Boston law firm, Lisa joined one of her
+            clients — a privately held medical device company based in
+            Braintree. It turned out to be one of the defining decisions of her
+            professional life.
+          </p>
+          <p>
+            For nearly <strong>25 years</strong>, she served as an executive and
+            chief legal officer at <strong>Haemonetics Corporation</strong>, a
+            global medical device company whose products improve outcomes for
+            surgical and cancer patients around the world. She held
+            responsibilities far beyond legal — including human resources,
+            employee health and safety, clinical and regulatory affairs,
+            investor relations, external affairs, and internal audit.
+          </p>
+          <p>
+            Throughout that time, she was the
+            <strong>only woman on the executive team</strong>. She helped build
+            a business from a small privately owned company into a NYSE publicly
+            traded global operation. It was thrilling, demanding work — and it
+            taught her that results come from persistence, collaboration, and
+            showing up every single day.
+          </p>
+        </div>
+      </div>
+      <div class="career-right">
+        <img
+          src="assets/images/lisa-headshot.png"
+          alt="Lisa Lopez, former Chief Legal Officer at Haemonetics Corporation"
+          style="
+            width: 100%;
+            max-width: 380px;
+            display: block;
+            filter: drop-shadow(8px 8px 0 rgba(26, 92, 90, 0.12));
+          "
+        />
+        <div class="company-callout" style="max-width: 380px">
+          <div class="company-callout-label">25 Years At</div>
+          <div class="company-callout-name">Haemonetics Corporation</div>
+          <div class="company-callout-detail">
+            Senior executive and chief legal officer · Global medical device
+            company · Braintree, MA · Improved outcomes for surgical and cancer
+            patients worldwide
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div id="site-footer"></div>
+    <!-- ═══ PUBLIC SERVICE ═══ -->
+    <section class="service" id="service">
+      <div class="service-inner">
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <div class="section-eyebrow-text">Community Service</div>
+          </div>
+          <h2 class="section-headline">
+            A lifetime of<br /><em>showing up</em>
+          </h2>
+          <div class="prose">
+            <p>
+              Lisa's commitment to Canton didn't begin when she decided to run
+              for office. It began decades earlier, quietly, through the kinds
+              of sustained civic engagement that rarely makes headlines but
+              shapes communities over time.
+            </p>
+            <p>
+              She has served in her parish, championed the
+              <strong>Community Preservation Act</strong> and chaired the
+              initial committee for many years, and worked tirelessly to bring
+              the <strong>Paul Revere Heritage Site</strong> to life using CPA
+              funds. When the community needed a new pool, she threw herself
+              into the campaign to fund it.
+            </p>
+            <p>
+              Immediately after Donald Trump's first election, she volunteered
+              as a <strong>pro bono immigration attorney</strong> — putting her
+              Yale law degree in service of the most vulnerable residents in her
+              community. She has served as a trustee for
+              <strong>Cathedral High School</strong>, a Boston school serving
+              mostly first-generation college-bound urban youth.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-year">Ongoing</div>
+                <div class="timeline-title">Community Preservation Act</div>
+                <div class="timeline-desc">
+                  Championed Canton's adoption of CPA and served as initial
+                  committee chair for many years. Helped fund the Paul Revere
+                  Heritage Site.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-year">Post-2016</div>
+                <div class="timeline-title">Pro Bono Immigration Attorney</div>
+                <div class="timeline-desc">
+                  Volunteered her legal expertise to represent immigrants after
+                  President Trump's first election — putting credentials in
+                  service of community.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-year">Ongoing</div>
+                <div class="timeline-title">Cathedral High School Trustee</div>
+                <div class="timeline-desc">
+                  Board trustee for a Boston school serving mostly
+                  first-generation college-bound urban youth.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-year">Ongoing</div>
+                <div class="timeline-title">
+                  Canton Affordable Housing Trust
+                </div>
+                <div class="timeline-desc">
+                  Championed Canton’s adoption, and now chairs the Trust.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-year">2023–Present</div>
+                <div class="timeline-title">Move the Vote Co-Leader</div>
+                <div class="timeline-desc">
+                  Co-led a grassroots initiative collecting over 2,000
+                  signatures and winning a ballot campaign to align local
+                  election timing.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-year">2024–Present</div>
+                <div class="timeline-title">Canton Housing Authority Chair</div>
+                <div class="timeline-desc">
+                  Elected in 2024 with the most votes of any candidate in a
+                  contested local race. Now chairs the Housing Authority.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="site.js"></script>
-</body>
+    <!-- ═══ THE SELECT BOARD ARC ═══ -->
+    <section class="arc" id="select-board">
+      <div class="arc-inner">
+        <div>
+          <div class="arc-eyebrow">
+            <div class="arc-eyebrow-line"></div>
+            <div class="arc-eyebrow-text">The Select Board</div>
+          </div>
+          <h2 class="arc-headline">
+            She lost.<br />She ran again.<br /><em>She won.</em>
+          </h2>
+        </div>
+        <div>
+          <div class="arc-body">
+            <p>
+              In 2019, Lisa ran for Canton's Select Board and lost — by a
+              handful of votes. Most people would have walked away. She doubled
+              down.
+            </p>
+            <p>
+              The following year she ran again, and won — becoming only the
+              <strong style="color: #fff">third woman in history</strong> to
+              serve on Canton's Select Board. During her tenure she championed
+              the town's
+              <strong style="color: #fff"
+                >municipal energy aggregation program</strong
+              >
+              (Canton Electrical Choice), delivering cleaner and cheaper energy
+              to residents. She championed the
+              <strong style="color: #fff">Affordable Housing Trust</strong> to
+              address housing instability among seniors, veterans, disabled
+              adults, and young families.
+            </p>
+            <p>
+              During the COVID years she collaborated with the Department of
+              Health to run regular informational sessions and coordinate free
+              vaccine distribution across the community.
+            </p>
+            <p>
+              She lost her bid for re-election in 2023 — and kept serving
+              anyway, because that's who she is.
+            </p>
+          </div>
+          <blockquote class="arc-pull">
+            "Covid demonstrated Canton at its best. Municipal employees and
+            residents pulled together to keep everyone safe."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHERE SHE STANDS NOW ═══ -->
+    <section class="now" id="now">
+      <div>
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">Where She Stands Now</div>
+        </div>
+        <h2 class="section-headline">Retired. Ready.<br /><em>All in.</em></h2>
+        <div class="prose">
+          <p>
+            Lisa is retired from all paid, private sector work. This isn't a
+            campaign she's fitting around other commitments — it's a full-time
+            commitment to becoming the most effective, available, and responsive
+            State Representative possible for Canton, Stoughton, and Avon.
+          </p>
+          <p>
+            She brings to this race something rare: the legal expertise of a
+            Yale-trained attorney, the operational experience of a 25-year
+            corporate executive, and the community credibility of someone who
+            has shown up for Canton for four decades — through wins and losses
+            alike.
+          </p>
+          <p>
+            The 6th Norfolk District deserves a representative who is in it
+            completely. That's exactly what Lisa Lopez is offering.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow" style="margin-bottom: 20px">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">Current Roles</div>
+        </div>
+        <div class="roles-grid">
+          <div class="role-item">
+            <div class="role-accent"></div>
+            <div class="role-content">
+              <div class="role-title">Chair, Canton Housing Authority</div>
+              <div class="role-org">
+                Elected 2024 · Most votes of any contested candidate
+              </div>
+            </div>
+          </div>
+          <div class="role-item">
+            <div class="role-accent"></div>
+            <div class="role-content">
+              <div class="role-title">Chair, Affordable Housing Trust</div>
+              <div class="role-org">Canton, Massachusetts</div>
+            </div>
+          </div>
+          <div class="role-item">
+            <div class="role-accent"></div>
+            <div class="role-content">
+              <div class="role-title">Co-Leader, Move the Vote</div>
+              <div class="role-org">
+                Grassroots civic participation initiative
+              </div>
+            </div>
+          </div>
+          <div class="role-item">
+            <div class="role-accent"></div>
+            <div class="role-content">
+              <div class="role-title">Trustee, Cathedral High School</div>
+              <div class="role-org">
+                Boston · First-generation college-bound youth
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ DUAL CTA ═══ -->
+    <section class="dual-cta">
+      <div class="cta-volunteer">
+        <div class="cta-eyebrow">Join the Campaign</div>
+        <h2 class="cta-headline">Ready to<br /><em>get involved?</em></h2>
+        <p class="cta-body">
+          Knock doors, make calls, or host a neighbor conversation. Every hour
+          you give moves us closer to Beacon Hill.
+        </p>
+        <a href="get-involved.html" class="btn-white btn-white-teal"
+          >Volunteer Now</a
+        >
+      </div>
+      <div class="cta-donate">
+        <div class="cta-eyebrow">Support the Campaign</div>
+        <h2 class="cta-headline">Chip in to<br /><em>make it happen.</em></h2>
+        <p class="cta-body">
+          Local campaigns run on local support. Any amount helps us reach voters
+          across Canton, Stoughton, and Avon.
+        </p>
+        <a
+          href="https://secure.actblue.com"
+          class="btn-white btn-white-amber"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Donate via ActBlue</a
+        >
+        <p class="cta-check">
+          Prefer a check? Make payable to
+          <em>Committee to Elect Lisa Lopez</em> and mail to: Deb Sundin,
+          Treasurer · 673 Sherman St, Canton MA 02021
+        </p>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="site.js"></script>
+  </body>
 </html>

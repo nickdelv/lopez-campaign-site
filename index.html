@@ -1,632 +1,1025 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lisa Lopez for State Representative — 6th Norfolk District</title>
-<meta name="description" content="Lisa Lopez is running for Massachusetts State Representative in the 6th Norfolk District, serving Canton, Stoughton, and Avon. A Yale-trained attorney, community leader, and lifelong Democrat ready to fight for our communities on Beacon Hill.">
-<meta property="og:title" content="Lisa Lopez for State Representative — 6th Norfolk District">
-<meta property="og:description" content="A Yale-trained attorney, former Chief Legal Officer, and Canton community leader running to represent Canton, Stoughton, and Avon on Beacon Hill.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lopezforrep.com/">
-<meta property="og:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
-<meta property="og:site_name" content="Lisa Lopez for State Representative">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Lisa Lopez for State Representative — 6th Norfolk District">
-<meta name="twitter:description" content="A Yale-trained attorney, former Chief Legal Officer, and Canton community leader running to represent Canton, Stoughton, and Avon on Beacon Hill.">
-<meta name="twitter:image" content="https://lopezforrep.com/assets/images/lisa-headshot.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="shared.css">
-<style>
-  /* ══ HERO ══ */
-  .hero {
-    background: var(--teal-pale);
-    height: 80vh;
-    min-height: 580px;
-    max-height: 780px;
-    display: grid;
-    grid-template-columns: 480px 1fr;
-    align-items: center;
-    padding: 0 64px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::after {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 4px;
-    background: var(--amber);
-  }
-  .hero-photo-col {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100%;
-    position: relative;
-    z-index: 2;
-  }
-  .hero-photo {
-    height: 95%;
-    width: auto;
-    max-width: 460px;
-    object-fit: contain;
-    object-position: bottom;
-    display: block;
-    filter: drop-shadow(12px 0 40px rgba(26,92,90,0.15));
-  }
-  .hero-content {
-    padding: 0 0 0 64px;
-    position: relative;
-    z-index: 2;
-  }
-  .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 28px;
-  }
-  .eyebrow-line { width: 28px; height: 2px; background: var(--amber); flex-shrink: 0; }
-  .eyebrow-text {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--teal-mid);
-  }
-  .hero-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(52px, 5vw, 78px);
-    font-weight: 300;
-    line-height: 1.05;
-    color: var(--teal);
-    letter-spacing: -0.01em;
-    max-width: 560px;
-  }
-  .hero-headline em { font-style: italic; color: var(--teal-mid); }
-  .hero-body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 1.72;
-    color: var(--text-lt);
-    max-width: 460px;
-    margin-top: 22px;
-  }
-  .hero-ctas {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-top: 36px;
-  }
-  .btn-primary {
-    background: var(--teal);
-    color: #fff;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11.5px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 16px 36px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: background 0.2s;
-  }
-  .btn-primary:hover { background: var(--teal-mid); }
-  .btn-secondary {
-    background: transparent;
-    color: var(--teal);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11.5px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 15px 30px;
-    border: 1.5px solid rgba(26,92,90,0.3);
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisa Lopez for State Representative — 6th Norfolk District</title>
+    <meta
+      name="description"
+      content="Lisa Lopez is running for Massachusetts State Representative in the 6th Norfolk District, serving Canton, Stoughton, and Avon. A Yale-trained attorney, community leader, and lifelong Democrat ready to fight for our communities on Beacon Hill."
+    />
+    <meta
+      property="og:title"
+      content="Lisa Lopez for State Representative — 6th Norfolk District"
+    />
+    <meta
+      property="og:description"
+      content="A Yale-trained attorney, former Chief Legal Officer, and Canton community leader running to represent Canton, Stoughton, and Avon on Beacon Hill."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lopezforrep.com/" />
+    <meta
+      property="og:image"
+      content="https://lopezforrep.com/assets/images/lisa-headshot.png"
+    />
+    <meta
+      property="og:site_name"
+      content="Lisa Lopez for State Representative"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Lisa Lopez for State Representative — 6th Norfolk District"
+    />
+    <meta
+      name="twitter:description"
+      content="A Yale-trained attorney, former Chief Legal Officer, and Canton community leader running to represent Canton, Stoughton, and Avon on Beacon Hill."
+    />
+    <meta
+      name="twitter:image"
+      content="https://lopezforrep.com/assets/images/lisa-headshot.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="shared.css" />
+    <style>
+      /* ══ HERO ══ */
+      .hero {
+        background: var(--teal-pale);
+        height: 80vh;
+        min-height: 580px;
+        max-height: 780px;
+        display: grid;
+        grid-template-columns: 480px 1fr;
+        align-items: center;
+        padding: 0 64px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--amber);
+      }
+      .hero-photo-col {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+      }
+      .hero-photo {
+        height: 95%;
+        width: auto;
+        max-width: 460px;
+        object-fit: contain;
+        object-position: bottom;
+        display: block;
+        filter: drop-shadow(12px 0 40px rgba(26, 92, 90, 0.15));
+      }
+      .hero-content {
+        padding: 0 0 0 64px;
+        position: relative;
+        z-index: 2;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+      .eyebrow-line {
+        width: 28px;
+        height: 2px;
+        background: var(--amber);
+        flex-shrink: 0;
+      }
+      .eyebrow-text {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--teal-mid);
+      }
+      .hero-headline {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(52px, 5vw, 78px);
+        font-weight: 300;
+        line-height: 1.05;
+        color: var(--teal);
+        letter-spacing: -0.01em;
+        max-width: 560px;
+      }
+      .hero-headline em {
+        font-style: italic;
+        color: var(--teal-mid);
+      }
+      .hero-body {
+        font-family: "DM Sans", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.72;
+        color: var(--text-lt);
+        max-width: 460px;
+        margin-top: 22px;
+      }
+      .hero-ctas {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 36px;
+      }
+      .btn-primary {
+        background: var(--teal);
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 11.5px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: 16px 36px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: background 0.2s;
+      }
+      .btn-primary:hover {
+        background: var(--teal-mid);
+      }
+      .btn-secondary {
+        background: transparent;
+        color: var(--teal);
+        font-family: "DM Sans", sans-serif;
+        font-size: 11.5px;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        border: 1.5px solid rgba(26, 92, 90, 0.3);
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
 
-  /* ══ WHY I'M RUNNING ══ */
-  .why {
-    background: var(--white);
-    padding: 96px 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .section-headline { font-size: clamp(38px, 3.6vw, 56px); }
-  .why-pull {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 23px;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 1.55;
-    color: var(--teal-mid);
-    margin-top: 32px;
-    padding-left: 22px;
-    border-left: 3px solid var(--amber);
-  }
-  .why-body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.8;
-    color: var(--text-lt);
-  }
-  .why-body p + p { margin-top: 18px; }
-  .why-sig {
-    margin-top: 36px;
-    padding-top: 28px;
-    border-top: 1px solid rgba(26,92,90,0.1);
-  }
-  .why-sig-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--teal);
-  }
-  .why-sig-title {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--text-lt);
-    margin-top: 3px;
-  }
+      /* ══ WHY I'M RUNNING ══ */
+      .why {
+        background: var(--white);
+        padding: 96px 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .section-headline {
+        font-size: clamp(38px, 3.6vw, 56px);
+      }
+      .why-pull {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 23px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.55;
+        color: var(--teal-mid);
+        margin-top: 32px;
+        padding-left: 22px;
+        border-left: 3px solid var(--amber);
+      }
+      .why-body {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8;
+        color: var(--text-lt);
+      }
+      .why-body p + p {
+        margin-top: 18px;
+      }
+      .why-sig {
+        margin-top: 36px;
+        padding-top: 28px;
+        border-top: 1px solid rgba(26, 92, 90, 0.1);
+      }
+      .why-sig-name {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--teal);
+      }
+      .why-sig-title {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--text-lt);
+        margin-top: 3px;
+      }
 
-  /* ══ ISSUES ══ */
-  .issues {
-    background: var(--teal);
-    padding: 96px 64px;
-    position: relative;
-    overflow: hidden;
-  }
-  .issues::before {
-    content: '';
-    position: absolute;
-    right: -120px; top: -120px;
-    width: 480px; height: 480px;
-    border-radius: 50%;
-    background: rgba(42,122,120,0.25);
-    pointer-events: none;
-  }
-  .issues-header { margin-bottom: 52px; }
-  .issues-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 14px;
-  }
-  .issues-eyebrow-line { width: 24px; height: 2px; background: rgba(255,255,255,0.25); flex-shrink: 0; }
-  .issues-eyebrow-text {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.45);
-  }
-  .issues-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(38px, 3.6vw, 54px);
-    font-weight: 300;
-    color: #fff;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-  }
-  .issues-headline em { font-style: italic; color: var(--teal-light); }
-  .issues-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
-  }
-  .issue-card {
-    background: rgba(255,255,255,0.05);
-    padding: 36px 28px 40px;
-    border-top: 3px solid transparent;
-    transition: background 0.25s, border-color 0.25s;
-  }
-  .issue-card:hover {
-    background: rgba(255,255,255,0.1);
-    border-top-color: var(--amber);
-  }
-  .issue-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 1;
-    color: var(--amber);
-    opacity: 0.55;
-    margin-bottom: 20px;
-    display: block;
-    letter-spacing: -0.02em;
-  }
-  .issue-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.1;
-    margin-bottom: 14px;
-    letter-spacing: -0.01em;
-  }
-  .issue-body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.72;
-    color: rgba(255,255,255,0.52);
-  }
+      /* ══ ISSUES ══ */
+      .issues {
+        background: var(--teal);
+        padding: 96px 64px;
+        position: relative;
+        overflow: hidden;
+      }
+      .issues::before {
+        content: "";
+        position: absolute;
+        right: -120px;
+        top: -120px;
+        width: 480px;
+        height: 480px;
+        border-radius: 50%;
+        background: rgba(42, 122, 120, 0.25);
+        pointer-events: none;
+      }
+      .issues-header {
+        margin-bottom: 52px;
+      }
+      .issues-eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 14px;
+      }
+      .issues-eyebrow-line {
+        width: 24px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.25);
+        flex-shrink: 0;
+      }
+      .issues-eyebrow-text {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.45);
+      }
+      .issues-headline {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(38px, 3.6vw, 54px);
+        font-weight: 300;
+        color: #fff;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+      }
+      .issues-headline em {
+        font-style: italic;
+        color: var(--teal-light);
+      }
+      .issues-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px;
+      }
+      .issue-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 36px 28px 40px;
+        border-top: 3px solid transparent;
+        transition:
+          background 0.25s,
+          border-color 0.25s;
+      }
+      .issue-card:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-top-color: var(--amber);
+      }
+      .issue-num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 1;
+        color: var(--amber);
+        opacity: 0.55;
+        margin-bottom: 20px;
+        display: block;
+        letter-spacing: -0.02em;
+      }
+      .issue-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.1;
+        margin-bottom: 14px;
+        letter-spacing: -0.01em;
+      }
+      .issue-body {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.72;
+        color: rgba(255, 255, 255, 0.52);
+      }
+      .issue-card--featured {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: auto 1fr 2fr;
+        align-items: center;
+        gap: 0 40px;
+        padding: 36px 40px 40px;
+        border-top: 3px solid var(--amber);
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .issue-card--featured .issue-num {
+        margin-bottom: 0;
+        font-size: 64px;
+        opacity: 0.45;
+      }
+      .issue-card--featured .issue-title {
+        font-size: 30px;
+        margin-bottom: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+        padding-right: 40px;
+      }
 
-  /* ══ BIO TEASER ══ */
-  .bio-teaser {
-    background: var(--linen);
-    padding: 96px 64px;
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .cred-item {
-    display: flex;
-    align-items: stretch;
-  }
-  .cred-bar {
-    width: 3px;
-    background: var(--amber);
-    flex-shrink: 0;
-    margin-right: 20px;
-    opacity: 0.45;
-    transition: opacity 0.2s;
-  }
-  .cred-item:hover .cred-bar { opacity: 1; }
-  .cred-content {
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(26,92,90,0.08);
-    flex: 1;
-  }
-  .cred-item:last-child .cred-content { border-bottom: none; }
-  .cred-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 3px;
-  }
-  .cred-value {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--teal);
-    line-height: 1.2;
-  }
-  .cred-detail {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    color: var(--text-lt);
-    margin-top: 2px;
-    line-height: 1.5;
-  }
-  .bio-body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.8;
-    color: var(--text-lt);
-  }
-  .bio-body p + p { margin-top: 18px; }
+      /* ══ ENDORSEMENTS ══ */
+      .endorsements {
+        background: var(--linen);
+        padding: 80px 64px 0;
+      }
+      .endorsements-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
+      }
+      .endorsement-card {
+        background: var(--white);
+        padding: 40px 32px;
+        border-top: 3px solid var(--teal-light);
+        transition: border-color 0.2s;
+      }
+      .endorsement-card:hover {
+        border-top-color: var(--amber);
+      }
+      .endorsement-quote {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 21px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.5;
+        color: var(--teal);
+        margin-bottom: 24px;
+      }
+      .endorsement-name {
+        font-family: "DM Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text);
+        letter-spacing: 0.04em;
+      }
+      .endorsement-title {
+        font-family: "DM Sans", sans-serif;
+        font-size: 11px;
+        font-weight: 300;
+        color: var(--text-lt);
+        margin-top: 3px;
+        letter-spacing: 0.04em;
+      }
 
-  /* ══ TRACK RECORD ══ */
-  .record {
-    background: var(--white);
-    padding: 96px 64px;
-  }
-  .record-header {
-    text-align: center;
-    max-width: 560px;
-    margin: 0 auto 52px;
-  }
-  .record-eyebrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 16px;
-  }
-  .record-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-  }
-  .record-item {
-    background: var(--teal-pale);
-    padding: 44px 40px;
-    position: relative;
-  }
-  .record-item::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--teal-light);
-    transition: background 0.2s;
-  }
-  .record-item:hover::before { background: var(--amber); }
-  .record-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--teal);
-    line-height: 1;
-    letter-spacing: -0.02em;
-  }
-  .record-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-top: 6px;
-    margin-bottom: 10px;
-  }
-  .record-desc {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.65;
-    color: var(--text-lt);
-  }
+      /* ══ BIO TEASER ══ */
+      .bio-teaser {
+        background: var(--linen);
+        padding: 96px 64px;
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .cred-item {
+        display: flex;
+        align-items: stretch;
+      }
+      .cred-bar {
+        width: 3px;
+        background: var(--amber);
+        flex-shrink: 0;
+        margin-right: 20px;
+        opacity: 0.45;
+        transition: opacity 0.2s;
+      }
+      .cred-item:hover .cred-bar {
+        opacity: 1;
+      }
+      .cred-content {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(26, 92, 90, 0.08);
+        flex: 1;
+      }
+      .cred-item:last-child .cred-content {
+        border-bottom: none;
+      }
+      .cred-label {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--amber);
+        margin-bottom: 3px;
+      }
+      .cred-value {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--teal);
+        line-height: 1.2;
+      }
+      .cred-detail {
+        font-family: "DM Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        color: var(--text-lt);
+        margin-top: 2px;
+        line-height: 1.5;
+      }
+      .bio-body {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8;
+        color: var(--text-lt);
+      }
+      .bio-body p + p {
+        margin-top: 18px;
+      }
 
-  /* ══ ANIMATIONS ══ */
-  .hero-content > * {
-    animation: fadeUp 0.7s ease forwards;
-    opacity: 0;
-  }
-  .hero-content > *:nth-child(1) { animation-delay: 0.10s; }
-  .hero-content > *:nth-child(2) { animation-delay: 0.24s; }
-  .hero-content > *:nth-child(3) { animation-delay: 0.38s; }
-  .hero-content > *:nth-child(4) { animation-delay: 0.50s; }
-  .hero-photo-col {
-    animation: fadeUp 0.9s ease 0.05s forwards;
-    opacity: 0;
-  }
+      /* ══ TRACK RECORD ══ */
+      .record {
+        background: var(--white);
+        padding: 96px 64px;
+      }
+      .record-header {
+        text-align: center;
+        max-width: 560px;
+        margin: 0 auto 52px;
+      }
+      .record-eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .record-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+      }
+      .record-item {
+        background: var(--teal-pale);
+        padding: 44px 40px;
+        position: relative;
+      }
+      .record-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--teal-light);
+        transition: background 0.2s;
+      }
+      .record-item:hover::before {
+        background: var(--amber);
+      }
+      .record-num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 56px;
+        font-weight: 700;
+        color: var(--teal);
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+      .record-label {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--amber);
+        margin-top: 6px;
+        margin-bottom: 10px;
+      }
+      .record-desc {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.65;
+        color: var(--text-lt);
+      }
 
-  /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
-  @media (max-width: 1024px) {
-    .hero { padding: 0 40px; }
-    .hero-content { padding: 0 0 0 40px; }
-    .why { padding: 80px 40px; }
-    .issues { padding: 80px 40px; }
-    .issues-grid { grid-template-columns: 1fr 1fr; }
-    .bio-teaser { padding: 80px 40px; }
-    .record { padding: 80px 40px; }
-  }
+      /* ══ ANIMATIONS ══ */
+      .hero-content > * {
+        animation: fadeUp 0.7s ease forwards;
+        opacity: 0;
+      }
+      .hero-content > *:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .hero-content > *:nth-child(2) {
+        animation-delay: 0.24s;
+      }
+      .hero-content > *:nth-child(3) {
+        animation-delay: 0.38s;
+      }
+      .hero-content > *:nth-child(4) {
+        animation-delay: 0.5s;
+      }
+      .hero-photo-col {
+        animation: fadeUp 0.9s ease 0.05s forwards;
+        opacity: 0;
+      }
 
-  /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
-  @media (max-width: 768px) {
-    .hero { grid-template-columns: 1fr; height: auto; min-height: auto; max-height: none; padding: 0; }
-    .hero-photo-col { height: 320px; order: -1; overflow: hidden; }
-    .hero-photo { height: 100%; width: 100%; max-width: 100%; object-fit: contain; object-position: center bottom; }
-    .hero-content { padding: 44px 24px 60px; }
-    .hero-headline { max-width: 100%; }
-    .why { grid-template-columns: 1fr; padding: 64px 24px; gap: 40px; }
-    .issues { padding: 64px 24px; }
-    .bio-teaser { grid-template-columns: 1fr; padding: 64px 24px; gap: 40px; }
-    .record { padding: 64px 24px; }
-    .record-grid { grid-template-columns: 1fr; }
-    .record-header { max-width: 100%; }
-  }
+      /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
+      @media (max-width: 1024px) {
+        .hero {
+          padding: 0 40px;
+        }
+        .hero-content {
+          padding: 0 0 0 40px;
+        }
+        .why {
+          padding: 80px 40px;
+        }
+        .issues {
+          padding: 80px 40px;
+        }
+        .issues-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .bio-teaser {
+          padding: 80px 40px;
+        }
+        .record {
+          padding: 80px 40px;
+        }
+        .endorsements {
+          padding: 64px 40px;
+        }
+      }
 
-  /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
-  @media (max-width: 480px) {
-    .hero-photo-col { height: 260px; }
-    .hero-content { padding: 36px 20px 52px; }
-    .hero-ctas { flex-direction: column; align-items: stretch; gap: 12px; }
-    .btn-primary, .btn-secondary { text-align: center; }
-    .why { padding: 48px 20px; }
-    .issues { padding: 48px 20px; }
-    .issues-grid { grid-template-columns: 1fr; }
-    .bio-teaser { padding: 48px 20px; }
-    .record { padding: 48px 20px; }
-  }
-</style>
-</head>
-<body>
+      /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
+      @media (max-width: 768px) {
+        .hero {
+          grid-template-columns: 1fr;
+          height: auto;
+          min-height: auto;
+          max-height: none;
+          padding: 0;
+        }
+        .hero-photo-col {
+          height: 320px;
+          order: -1;
+          overflow: hidden;
+        }
+        .hero-photo {
+          height: 100%;
+          width: 100%;
+          max-width: 100%;
+          object-fit: contain;
+          object-position: center bottom;
+        }
+        .hero-content {
+          padding: 44px 24px 60px;
+        }
+        .hero-headline {
+          max-width: 100%;
+        }
+        .why {
+          grid-template-columns: 1fr;
+          padding: 64px 24px;
+          gap: 40px;
+        }
+        .issues {
+          padding: 64px 24px;
+        }
+        .bio-teaser {
+          grid-template-columns: 1fr;
+          padding: 64px 24px;
+          gap: 40px;
+        }
+        .record {
+          padding: 64px 24px;
+        }
+        .record-grid {
+          grid-template-columns: 1fr;
+        }
+        .record-header {
+          max-width: 100%;
+        }
+        .endorsements {
+          padding: 48px 24px;
+        }
+        .endorsements-grid {
+          grid-template-columns: 1fr;
+        }
+        .endorsements {
+          background: var(--linen);
+          padding: 80px 64px 56px;
+        }
+      }
 
-<div id="site-header"></div>
+      /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
+      @media (max-width: 480px) {
+        .hero-photo-col {
+          height: 260px;
+        }
+        .hero-content {
+          padding: 36px 20px 52px;
+        }
+        .hero-ctas {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 12px;
+        }
+        .btn-primary,
+        .btn-secondary {
+          text-align: center;
+        }
+        .why {
+          padding: 48px 20px;
+        }
+        .issues {
+          padding: 48px 20px;
+        }
+        .issues-grid {
+          grid-template-columns: 1fr;
+        }
+        .bio-teaser {
+          padding: 48px 20px;
+        }
+        .record {
+          padding: 48px 20px;
+        }
+        .endorsements {
+          padding: 40px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site-header"></div>
 
-<section class="hero">
-  <div class="hero-photo-col">
-    <img class="hero-photo" src="assets/images/lisa-headshot.png" alt="Lisa Lopez, candidate for Massachusetts State Representative, 6th Norfolk District">
-  </div>
-  <div class="hero-content">
-    <div class="eyebrow">
-      <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">Canton · Stoughton · Avon</div>
-    </div>
-    <h1 class="hero-headline">These are no<br><em>ordinary</em> times.</h1>
-    <p class="hero-body">A lifelong Democrat, Yale-trained attorney, and 42-year Canton resident — ready to fight for our communities on Beacon Hill.</p>
-    <div class="hero-ctas">
-      <a href="https://secure.actblue.com" class="btn-primary" target="_blank" rel="noopener noreferrer">Donate Now</a>
-      <a href="get-involved.html" class="btn-secondary">Get Involved</a>
-    </div>
-  </div>
-</section>
-
-<section class="why" id="why">
-  <div>
-    <div class="section-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">Why I'm Running</div>
-    </div>
-    <h2 class="section-headline">Time to get<br>back in <em>the ring.</em></h2>
-    <blockquote class="why-pull">
-      "Most people I know are struggling with how to respond, to keep the faith with what we hold dear. For me, it's time to contribute and serve the best way I know how."
-    </blockquote>
-  </div>
-  <div>
-    <div class="why-body">
-      <p>These are no ordinary times — for our nation, for our state, and for our communities. As a lifelong Democrat, I'm prepared to represent and be accountable to all of the District's residents, and to join the State House in its fight against the war on immigrants, on science, on climate, and on our democratic institutions.</p>
-      <p>I've been here before. After losing a Select Board race in 2019 by a few votes, I doubled down and won the following year — becoming only the third woman to serve on Canton's Select Board. I know how to fight, how to listen, and how to get things done.</p>
-      <p>Retired from all paid, private sector work, I'm prepared to devote myself full time to being the most effective, available, and responsive State Representative possible for Canton, Stoughton, and Avon.</p>
-    </div>
-    <div class="why-sig">
-      <div class="why-sig-name">Lisa Lopez</div>
-      <div class="why-sig-title">Candidate · 6th Norfolk District</div>
-    </div>
-  </div>
-</section>
-
-<section class="issues" id="issues">
-  <div class="issues-header">
-    <div class="issues-eyebrow">
-      <div class="issues-eyebrow-line"></div>
-      <div class="issues-eyebrow-text">The Issues That Matter</div>
-    </div>
-    <h2 class="issues-headline">What I'll fight for<br><em>on Beacon Hill</em></h2>
-  </div>
-  <div class="issues-grid">
-    <div class="issue-card">
-      <span class="issue-num">01</span>
-      <div class="issue-title">Housing &amp; Affordability</div>
-      <div class="issue-body">Seniors, veterans, young families — everyone deserves stability. As chair of the Canton Housing Authority and Affordable Housing Trust, I've been working this problem for years and know how to move the needle.</div>
-    </div>
-    <div class="issue-card">
-      <span class="issue-num">02</span>
-      <div class="issue-title">Climate &amp; Clean Energy</div>
-      <div class="issue-body">I championed Canton's Municipal Electrical Aggregation program to deliver cleaner, cheaper energy to residents. On Beacon Hill I'll push for policies that take our climate obligations seriously.</div>
-    </div>
-    <div class="issue-card">
-      <span class="issue-num">03</span>
-      <div class="issue-title">Civil Rights &amp; Immigration</div>
-      <div class="issue-body">After Trump's first election I became a pro bono immigration attorney because I believe in standing up for the most vulnerable. I'll bring that same conviction to the State House.</div>
-    </div>
-    <div class="issue-card">
-      <span class="issue-num">04</span>
-      <div class="issue-title">Democracy &amp; Civic Access</div>
-      <div class="issue-body">I co-led Move the Vote, collecting over 2,000 signatures and running a successful ballot campaign to align local election timing and increase civic participation. Making democracy work better is personal to me.</div>
-    </div>
-  </div>
-</section>
-
-<section class="bio-teaser" id="about">
-  <div>
-    <div class="section-eyebrow" style="margin-bottom:32px;">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">About Lisa</div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-bar"></div>
-      <div class="cred-content">
-        <div class="cred-label">Education</div>
-        <div class="cred-value">Yale Law School</div>
-        <div class="cred-detail">The Ohio State University, undergraduate</div>
+    <section class="hero">
+      <div class="hero-photo-col">
+        <img
+          class="hero-photo"
+          src="assets/images/lisa-headshot.png"
+          alt="Lisa Lopez, candidate for Massachusetts State Representative, 6th Norfolk District"
+        />
       </div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-bar"></div>
-      <div class="cred-content">
-        <div class="cred-label">Career</div>
-        <div class="cred-value">Chief Legal Officer</div>
-        <div class="cred-detail">Haemonetics Corporation — nearly 25 years, global medical device company</div>
+      <div class="hero-content">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <div class="eyebrow-text">Canton · Stoughton · Avon</div>
+        </div>
+        <h1 class="hero-headline">
+          These are no<br /><em>ordinary</em> times.
+        </h1>
+        <p class="hero-body">
+          A lifelong Democrat, Yale-trained attorney, and 42-year Canton
+          resident — ready to fight for our communities on Beacon Hill.
+        </p>
+        <div class="hero-ctas">
+          <a
+            href="https://secure.actblue.com"
+            class="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Donate Now</a
+          >
+          <a href="get-involved.html" class="btn-secondary">Get Involved</a>
+        </div>
       </div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-bar"></div>
-      <div class="cred-content">
-        <div class="cred-label">Public Service</div>
-        <div class="cred-value">Canton Select Board</div>
-        <div class="cred-detail">Third woman ever to serve · Housing Authority Chair · Affordable Housing Trust Chair</div>
+    </section>
+
+    <section class="why" id="why">
+      <div>
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">Why I'm Running</div>
+        </div>
+        <h2 class="section-headline">
+          Time to get<br />back in <em>the ring.</em>
+        </h2>
+        <blockquote class="why-pull">
+          "Most people I know are struggling with how to respond, to keep the
+          faith with what we hold dear. For me, it's time to contribute and
+          serve the best way I know how."
+        </blockquote>
       </div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-bar"></div>
-      <div class="cred-content">
-        <div class="cred-label">Community</div>
-        <div class="cred-value">42 Years in Canton</div>
-        <div class="cred-detail">Pro bono immigration attorney · CPA champion · Move the Vote co-leader</div>
+      <div>
+        <div class="why-body">
+          <p>
+            These are no ordinary times — for our nation, for our state, and for
+            our communities. As a lifelong Democrat, I'm prepared to represent
+            and be accountable to all of the District's residents, and to join
+            the State House in its fight against the war on immigrants, on
+            science, on climate, and on our democratic institutions.
+          </p>
+          <p>
+            I've been here before. After losing a Select Board race in 2019 by a
+            few votes, I doubled down and won the following year — becoming only
+            the third woman to serve on Canton's Select Board. I know how to
+            fight, how to listen, and how to get things done.
+          </p>
+          <p>
+            Retired from all paid, private sector work, I'm prepared to devote
+            myself full time to being the most effective, available, and
+            responsive State Representative possible for Canton, Stoughton, and
+            Avon.
+          </p>
+        </div>
+        <div class="why-sig">
+          <div class="why-sig-name">Lisa Lopez</div>
+          <div class="why-sig-title">Candidate · 6th Norfolk District</div>
+        </div>
       </div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-bar"></div>
-      <div class="cred-content">
-        <div class="cred-label">Family</div>
-        <div class="cred-value">Mother of Three</div>
-        <div class="cred-detail">Raised her family in Canton · Massachusetts resident for over 45 years</div>
+    </section>
+
+    <section class="issues" id="issues">
+      <div class="issues-header">
+        <div class="issues-eyebrow">
+          <div class="issues-eyebrow-line"></div>
+          <div class="issues-eyebrow-text">The Issues That Matter</div>
+        </div>
+        <h2 class="issues-headline">
+          What I'll fight for<br /><em>on Beacon Hill</em>
+        </h2>
       </div>
-    </div>
-  </div>
-  <div>
-    <h2 class="section-headline" style="margin-bottom:28px;">A neighbor.<br>A fighter.<br><em>A proven record.</em></h2>
-    <div class="bio-body">
-      <p>I grew up the oldest of five in a middle-class New Jersey family. My father — born in the US to a Puerto Rican mother and Mexican father — and my mother were my role models for community service and love of country, even though I never shared their politics.</p>
-      <p>After Yale Law School I came to Massachusetts, raised my three children here, and never left. For nearly 25 years I was the only woman on the executive team at Haemonetics, helping build a global business that improved the lives of surgical and cancer patients. It was hard. It was thrilling. And it taught me that you get more done through persistence, collaboration, and showing up every single day.</p>
-      <p>That's the same approach I've brought to every role in this community — and the same approach I'll bring to Beacon Hill.</p>
-    </div>
-    <div style="margin-top:36px;">
-      <a href="about.html" class="btn-primary">Read Full Biography</a>
-    </div>
-  </div>
-</section>
+      <div class="issues-grid">
+        <div class="issue-card">
+          <span class="issue-num">01</span>
+          <div class="issue-title">Housing &amp; Affordability</div>
+          <div class="issue-body">
+            Seniors, veterans, young families — everyone deserves stability. As
+            chair of both the Canton Housing Authority and the Affordable
+            Housing Trust, I've been working this complex problem for years and
+            know how much it matters.
+          </div>
+        </div>
+        <div class="issue-card">
+          <span class="issue-num">02</span>
+          <div class="issue-title">Climate &amp; Clean Energy</div>
+          <div class="issue-body">
+            I championed Canton's municipal energy aggregation program (known as
+            Canton Electrical Choice) to deliver cleaner, cheaper energy to
+            residents. On Beacon Hill I'll push for policies that take our
+            climate obligations seriously.
+          </div>
+        </div>
+        <div class="issue-card">
+          <span class="issue-num">03</span>
+          <div class="issue-title">Civil Rights &amp; Immigration</div>
+          <div class="issue-body">
+            After President Trump's first election I became a pro bono
+            immigration attorney because I believe in standing up for the most
+            vulnerable. I'll bring that same conviction to the State House.
+          </div>
+        </div>
+        <div class="issue-card">
+          <span class="issue-num">04</span>
+          <div class="issue-title">Democracy &amp; Civic Access</div>
+          <div class="issue-body">
+            I co-led Move the Vote, collecting over 2,000 signatures and running
+            a successful ballot campaign to align local election timing and
+            increase civic participation. Making democracy work better is
+            personal to me.
+          </div>
+        </div>
+        <div class="issue-card issue-card--featured">
+          <span class="issue-num">05</span>
+          <div class="issue-title">Education &amp; Opportunity</div>
+          <div class="issue-body">
+            As a long-term trustee of Boston's Cathedral High School — serving
+            mostly first-generation, college-bound urban youth — I've seen
+            firsthand what's at stake. Massachusetts has a well-deserved
+            reputation for educational excellence. Every student, regardless of
+            zip code or family income, deserves access to that same excellence.
+            On Beacon Hill, I'll fight for the resources and policies that give
+            students from less affluent districts a real shot.
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="record">
-  <div class="record-header">
-    <div class="record-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <div class="section-eyebrow-text">Track Record</div>
-      <div class="section-eyebrow-line"></div>
-    </div>
-    <h2 class="section-headline" style="text-align:center;">Getting things done<br><em>for this community</em></h2>
-  </div>
-  <div class="record-grid">
-    <div class="record-item">
-      <div class="record-num">2,000+</div>
-      <div class="record-label">Signatures — Move the Vote</div>
-      <div class="record-desc">Co-led a grassroots ballot initiative to move Canton's local elections to November, bringing them in line with state and national elections to boost turnout.</div>
-    </div>
-    <div class="record-item">
-      <div class="record-num">#1</div>
-      <div class="record-label">Most Votes, 2024 Canton Election</div>
-      <div class="record-desc">Ran for Canton Housing Authority Chair and earned more votes than any other candidate on the ballot.</div>
-    </div>
-    <div class="record-item">
-      <div class="record-num">3rd</div>
-      <div class="record-label">Woman on Canton Select Board</div>
-      <div class="record-desc">Only the third woman ever to serve on Canton's Select Board — after losing by a handful of votes, she ran again and won.</div>
-    </div>
-  </div>
-</section>
+    <section class="endorsements">
+      <div class="endorsements-grid">
+        <div class="endorsement-card">
+          <div class="endorsement-quote">
+            "She has accomplished so much in moving Canton forward. For me, it's
+            her instrumental role in getting the Community Preservation Act
+            passed in 2012, and then turning the Plymouth Rubber site into the
+            Paul Revere Heritage Site."
+          </div>
+          <div class="endorsement-name">Trish Boyden</div>
+          <div class="endorsement-title">Vice Chair, Canton Select Board</div>
+        </div>
+        <div class="endorsement-card">
+          <div class="endorsement-quote">
+            "Her intelligence, expertise, analytical thinking and unwavering
+            commitment will be significant assets to the entire 6th Norfolk
+            district."
+          </div>
+          <div class="endorsement-name">Susan Harrington</div>
+          <div class="endorsement-title">Member, Canton Select Board</div>
+        </div>
+        <div class="endorsement-card">
+          <div class="endorsement-quote">
+            "Lisa does not just talk about change. She creates it. She
+            challenges people to contribute. She builds momentum. She follows
+            through."
+          </div>
+          <div class="endorsement-name">Jeff Sullivan</div>
+          <div class="endorsement-title">Canton Resident, 19 Years</div>
+        </div>
+      </div>
+    </section>
 
-<section class="dual-cta" id="involve">
-  <div class="cta-volunteer">
-    <div class="cta-eyebrow">Join the Campaign</div>
-    <h2 class="cta-headline">Ready to<br><em>get involved?</em></h2>
-    <p class="cta-body">Knock doors, make calls, or host a neighbor conversation. Every hour you give moves us closer to Beacon Hill.</p>
-    <a href="get-involved.html" class="btn-white btn-white-teal">Volunteer Now</a>
-  </div>
-  <div class="cta-donate" id="donate">
-    <div class="cta-eyebrow">Support the Campaign</div>
-    <h2 class="cta-headline">Chip in to<br><em>make it happen.</em></h2>
-    <p class="cta-body">Local campaigns run on local support. Any amount helps us reach voters across Canton, Stoughton, and Avon.</p>
-    <a href="https://secure.actblue.com" class="btn-white btn-white-amber" target="_blank" rel="noopener noreferrer">Donate via ActBlue</a>
-  </div>
-</section>
+    <section class="bio-teaser" id="about">
+      <div>
+        <div class="section-eyebrow" style="margin-bottom: 32px">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">About Lisa</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-bar"></div>
+          <div class="cred-content">
+            <div class="cred-label">Education</div>
+            <div class="cred-value">Yale Law School</div>
+            <div class="cred-detail">
+              The Ohio State University, undergraduate
+            </div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-bar"></div>
+          <div class="cred-content">
+            <div class="cred-label">Career</div>
+            <div class="cred-value">
+              Senior Executive and Chief Legal Officer
+            </div>
+            <div class="cred-detail">
+              Haemonetics Corporation — nearly 25 years, global medical device
+              company
+            </div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-bar"></div>
+          <div class="cred-content">
+            <div class="cred-label">Public Service</div>
+            <div class="cred-value">Canton Select Board</div>
+            <div class="cred-detail">
+              Third woman ever to serve · Housing Authority Chair · Affordable
+              Housing Trust Chair · Community Preservation Act champion
+            </div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-bar"></div>
+          <div class="cred-content">
+            <div class="cred-label">Community</div>
+            <div class="cred-value">42 Years in Canton</div>
+            <div class="cred-detail">
+              Pro bono immigration attorney · Move the Vote co-leader ·
+              Cathedral High School Trustee · Former MassMedic Chair · Former
+              New England Legal Foundation Chair
+            </div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-bar"></div>
+          <div class="cred-content">
+            <div class="cred-label">Family</div>
+            <div class="cred-value">Mother of Three</div>
+            <div class="cred-detail">
+              Raised her family in Canton · Massachusetts resident for over 45
+              years · Married 44 years to Victor Del Vecchio
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-headline" style="margin-bottom: 28px">
+          A neighbor.<br />A fighter.<br /><em>A proven record.</em>
+        </h2>
+        <div class="bio-body">
+          <p>
+            I grew up the oldest of five in a middle-class New Jersey family. My
+            father — born in the US to a Puerto Rican mother and Mexican father
+            — and my mother were my role models for community service and love
+            of country, even though I never shared their politics.
+          </p>
+          <p>
+            After Yale Law School I came to Massachusetts, raised my three
+            children here, and never left. For nearly 25 years I was the only
+            woman on the executive team at Haemonetics, helping build a global
+            business that improved the lives of surgical and cancer patients. It
+            was hard. It was thrilling. And it taught me that you get more done
+            through persistence, collaboration, and showing up every single day.
+          </p>
+          <p>
+            That's the same approach I've brought to every role in this
+            community — and the same approach I'll bring to Beacon Hill.
+          </p>
+        </div>
+        <div style="margin-top: 36px">
+          <a href="about.html" class="btn-primary">Read Full Biography</a>
+        </div>
+      </div>
+    </section>
 
-<div id="site-footer"></div>
+    <section class="record">
+      <div class="record-header">
+        <div class="record-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">Track Record</div>
+          <div class="section-eyebrow-line"></div>
+        </div>
+        <h2 class="section-headline" style="text-align: center">
+          Getting things done<br /><em>for this community</em>
+        </h2>
+      </div>
+      <div class="record-grid">
+        <div class="record-item">
+          <div class="record-num">2,000+</div>
+          <div class="record-label">Signatures — Move the Vote</div>
+          <div class="record-desc">
+            Co-led a grassroots ballot initiative to move Canton's local
+            elections to November, bringing them in line with state and national
+            elections to boost turnout.
+          </div>
+        </div>
+        <div class="record-item">
+          <div class="record-num">#1</div>
+          <div class="record-label">Most Votes, 2024 Canton Election</div>
+          <div class="record-desc">
+            Ran for Canton Housing Authority Chair and earned more votes than
+            any other candidate on the ballot.
+          </div>
+        </div>
+        <div class="record-item">
+          <div class="record-num">3rd</div>
+          <div class="record-label">Woman on Canton Select Board</div>
+          <div class="record-desc">
+            Only the third woman ever to serve on Canton's Select Board — after
+            losing by a handful of votes, she ran again and won.
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="site.js"></script>
-</body>
+    <section class="dual-cta" id="involve">
+      <div class="cta-volunteer">
+        <div class="cta-eyebrow">Join the Campaign</div>
+        <h2 class="cta-headline">Ready to<br /><em>get involved?</em></h2>
+        <p class="cta-body">
+          Knock doors, make calls, or host a neighbor conversation. Every hour
+          you give moves us closer to Beacon Hill.
+        </p>
+        <a href="get-involved.html" class="btn-white btn-white-teal"
+          >Volunteer Now</a
+        >
+      </div>
+      <div class="cta-donate" id="donate">
+        <div class="cta-eyebrow">Support the Campaign</div>
+        <h2 class="cta-headline">Chip in to<br /><em>make it happen.</em></h2>
+        <p class="cta-body">
+          Local campaigns run on local support. Any amount helps us reach voters
+          across Canton, Stoughton, and Avon.
+        </p>
+        <a
+          href="https://secure.actblue.com"
+          class="btn-white btn-white-amber"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Donate via ActBlue</a
+        >
+        <p class="cta-check">
+          Prefer a check? Make payable to
+          <em>Committee to Elect Lisa Lopez</em> and mail to: Deb Sundin,
+          Treasurer · 673 Sherman St, Canton MA 02021
+        </p>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="site.js"></script>
+  </body>
 </html>
