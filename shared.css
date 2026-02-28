@@ -25,6 +25,28 @@ body {
   background: var(--white);
 }
 
+/* ══ ANNOUNCEMENT BAR ══ */
+.announce-bar {
+  background: var(--teal-mid);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 10px 64px;
+}
+.announce-bar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  transition: border-color 0.2s;
+}
+.announce-bar a:hover {
+  border-bottom-color: #fff;
+}
+
 /* ══ HEADER ══ */
 header {
   background: var(--teal-pale);
@@ -257,7 +279,7 @@ footer {
   padding: 80px 64px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   overflow: hidden;
 }
@@ -273,10 +295,10 @@ footer {
 }
 .cta-donate {
   background: var(--amber);
-  padding: 80px 64px;
+  padding: 80px 64px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   overflow: hidden;
 }
@@ -332,6 +354,7 @@ footer {
   color: rgba(255, 255, 255, 0.45);
   margin-top: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   max-width: 380px;
 }
