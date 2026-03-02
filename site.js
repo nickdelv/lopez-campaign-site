@@ -12,17 +12,12 @@
 
   loadInclude("site-header", "header.html", function () {
     // Active nav state
-    var page = location.pathname.split("/").pop() || "index.html";
-    // Normalize — add .html if missing
-    if (page && !page.includes(".")) page = page + ".html";
+    var page = location.pathname.split("/").pop() || "index";
+    if (page.includes(".")) page = page.split(".")[0]; // strip .html if present
+
     document.querySelectorAll("nav a").forEach(function (a) {
-      if (page === "about.html" && a.getAttribute("href") === "about.html")
-        a.classList.add("active");
-      else if (
-        page === "get-involved.html" &&
-        a.getAttribute("href") === "get-involved.html"
-      )
-        a.classList.add("active");
+      var href = a.getAttribute("href").replace(/^\//, "").replace(".html", "");
+      if (page === href) a.classList.add("active");
     });
 
     // Hamburger toggle
