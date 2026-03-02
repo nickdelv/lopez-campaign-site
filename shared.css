@@ -119,7 +119,7 @@ nav a {
 nav a:hover {
   color: var(--teal);
 }
-nav a.active {
+header nav a.active {
   color: var(--teal);
   font-weight: 600;
 }

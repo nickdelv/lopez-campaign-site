@@ -15,7 +15,6 @@
     var page = location.pathname.split("/").pop() || "index.html";
     // Normalize — add .html if missing
     if (page && !page.includes(".")) page = page + ".html";
-    console.log("Current page:", page);
     document.querySelectorAll("nav a").forEach(function (a) {
       if (page === "about.html" && a.getAttribute("href") === "about.html")
         a.classList.add("active");
