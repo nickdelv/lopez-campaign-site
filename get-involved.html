@@ -182,13 +182,10 @@
 
       <form
         class="volunteer-form"
-        name="volunteer"
+        id="volunteer-form"
         method="POST"
-        data-netlify="true"
-        action="/thank-you.html"
+        action="https://script.google.com/macros/s/AKfycbyj2DWbCbPoH_ngvN0a7WJUMOqn00V0yf0TV4JhlJrAidavCWsh-qhKXk7fAJEye69I_w/exec"
       >
-        <input type="hidden" name="form-name" value="volunteer" />
-
         <div class="form-row">
           <div class="form-field">
             <label for="first_name"
@@ -197,7 +194,7 @@
             <input
               type="text"
               id="first_name"
-              name="first_name"
+              name="firstName"
               placeholder="Jane"
               required
             />
@@ -209,7 +206,7 @@
             <input
               type="text"
               id="last_name"
-              name="last_name"
+              name="lastName"
               placeholder="Smith"
               required
             />
@@ -245,10 +242,10 @@
             <label for="town">Your Town <span class="required">*</span></label>
             <select id="town" name="town" required>
               <option value="" disabled selected>Select your town</option>
-              <option value="canton">Canton</option>
-              <option value="stoughton">Stoughton</option>
-              <option value="avon">Avon</option>
-              <option value="other">Other</option>
+              <option value="Canton">Canton</option>
+              <option value="Stoughton">Stoughton</option>
+              <option value="Avon">Avon</option>
+              <option value="Other">Other</option>
             </select>
           </div>
         </div>
@@ -259,37 +256,67 @@
           <label
             >How would you like to help? <span class="required">*</span></label
           >
+          <!-- Hidden field that JS populates with comma-separated checkbox values -->
+          <input type="hidden" name="help" id="help-hidden" />
           <div class="checkbox-group">
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="canvass" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Knock doors / canvass my neighborhood"
+              />
               <span class="checkbox-label"
                 >Knock doors / canvass my neighborhood</span
               >
             </label>
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="phone" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Phone bank from home"
+              />
               <span class="checkbox-label">Phone bank from home</span>
             </label>
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="postcards" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Write postcards to friends & neighbors"
+              />
               <span class="checkbox-label"
-                >Write postcards to friends & neighbors</span
+                >Write postcards to friends &amp; neighbors</span
               >
             </label>
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="host" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Host a living room event"
+              />
               <span class="checkbox-label">Host a living room event</span>
             </label>
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="sign" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Put up a yard sign"
+              />
               <span class="checkbox-label">Put up a yard sign</span>
             </label>
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="social" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Share on social media"
+              />
               <span class="checkbox-label">Share on social media</span>
             </label>
             <label class="checkbox-item">
-              <input type="checkbox" name="volunteer[]" value="other" />
+              <input
+                type="checkbox"
+                class="volunteer-check"
+                value="Something else — I'll explain below"
+              />
               <span class="checkbox-label"
                 >Something else — I'll explain below</span
               >
@@ -301,7 +328,7 @@
           <label for="message">Anything else you'd like us to know?</label>
           <textarea
             id="message"
-            name="message"
+            name="notes"
             placeholder="Skills, availability, questions — whatever feels relevant."
           ></textarea>
         </div>
@@ -359,5 +386,37 @@
     <div id="site-footer"></div>
 
     <script src="site.js"></script>
+    <script>
+      (function () {
+        const form = document.getElementById("volunteer-form");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Collect checked volunteer options into a comma-separated string
+          const checked = Array.from(
+            document.querySelectorAll(".volunteer-check:checked"),
+          ).map((cb) => cb.value);
+          document.getElementById("help-hidden").value = checked.join(", ");
+
+          const btn = form.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          btn.textContent = "Submitting\u2026";
+
+          fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+          })
+            .then(function () {
+              window.location.href = "/thank-you.html";
+            })
+            .catch(function () {
+              // Apps Script returns a CORS error on success in some browsers,
+              // but the submission still goes through — redirect anyway.
+              window.location.href = "/thank-you.html";
+            });
+        });
+      })();
+    </script>
   </body>
 </html>
