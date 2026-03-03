@@ -535,16 +535,16 @@
     padding: 0;
   }
   .hero-photo-col {
-    height: 320px;
+    height: auto;
     order: -1;
     overflow: hidden;
   }
   .hero-photo {
-    height: 100%;
+    height: auto;
     width: 100%;
     max-width: 100%;
     object-fit: contain;
-    transform: scale(1.1);
+    transform: none;
     object-position: center bottom;
   }
   .hero-content {
@@ -602,7 +602,7 @@
 /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
 @media (max-width: 480px) {
   .hero-photo-col {
-    height: 260px;
+    height: auto;
   }
   .hero-content {
     padding: 36px 20px 52px;
