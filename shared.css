@@ -473,6 +473,9 @@ footer {
   .logo {
     padding: 16px 0;
   }
+  .logo-lopez {
+    font-size: 44px;
+  }
   .nav-toggle {
     display: flex;
     padding: 16px 8px;

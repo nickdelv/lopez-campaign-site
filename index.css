@@ -570,18 +570,19 @@
     grid-template-columns: 1fr;
   }
   .issue-featured-left {
+    flex-direction: column;
+    align-items: flex-start;
     border-right: none;
     padding-right: 0;
-    gap: 16px;
-    align-self: auto;
+    gap: 0;
   }
   .issue-card--featured .issue-num {
     font-size: 48px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .issue-card--featured .issue-title {
     font-size: 26px;
-    margin-bottom: 0;
+    margin-bottom: 14px;
   }
   .issue-card--featured .issue-body {
     display: block;
