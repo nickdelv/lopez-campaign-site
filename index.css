@@ -279,23 +279,28 @@
 .issue-card--featured {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: auto 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 0 40px;
   padding: 36px 40px 40px;
   border-top: 3px solid var(--amber);
   background: rgba(255, 255, 255, 0.08);
 }
-.issue-card--featured .issue-num {
-  margin-bottom: 0;
-  font-size: 64px;
-  opacity: 0.45;
-}
-.issue-card--featured .issue-title {
-  font-size: 30px;
-  margin-bottom: 0;
+.issue-featured-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   border-right: 1px solid rgba(255, 255, 255, 0.12);
   padding-right: 40px;
+  justify-content: flex-start;
+}
+.issue-card--featured .issue-num {
+  margin-bottom: 10px;
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+.issue-card--featured .issue-title {
+  margin-bottom: 0;
 }
 
 /* ══ ENDORSEMENTS ══ */
@@ -564,15 +569,19 @@
   .issue-card--featured {
     grid-template-columns: 1fr;
   }
+  .issue-featured-left {
+    border-right: none;
+    padding-right: 0;
+    gap: 16px;
+    align-self: auto;
+  }
   .issue-card--featured .issue-num {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .issue-card--featured .issue-title {
     font-size: 26px;
-    border-right: none;
-    padding-right: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
   }
   .issue-card--featured .issue-body {
     display: block;
