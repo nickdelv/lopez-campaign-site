@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found — Lisa Lopez for State Representative</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="shared.css?v=4" />
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+        background: var(--teal);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 96px 64px;
+        position: relative;
+        overflow: hidden;
+      }
+      main::before {
+        content: "";
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgba(42, 122, 120, 0.3);
+        pointer-events: none;
+      }
+      main::after {
+        content: "";
+        position: absolute;
+        left: -80px;
+        bottom: -80px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: rgba(42, 122, 120, 0.2);
+        pointer-events: none;
+      }
+      .not-found-inner {
+        max-width: 640px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      .nf-code {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(80px, 14vw, 160px);
+        font-weight: 300;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.12);
+        letter-spacing: -0.04em;
+        margin-bottom: 8px;
+      }
+      .nf-eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+      .nf-eyebrow-line {
+        width: 24px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.25);
+        flex-shrink: 0;
+      }
+      .nf-eyebrow-text {
+        font-family: "DM Sans", sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .nf-headline {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(40px, 5vw, 68px);
+        font-weight: 300;
+        line-height: 1.05;
+        color: #fff;
+        letter-spacing: -0.02em;
+        margin-bottom: 24px;
+      }
+      .nf-headline em {
+        font-style: italic;
+        color: var(--teal-light);
+      }
+      .nf-body {
+        font-family: "DM Sans", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.65);
+        max-width: 440px;
+        margin: 0 auto 40px;
+      }
+      .nf-divider {
+        width: 48px;
+        height: 2px;
+        background: var(--amber);
+        margin: 0 auto 40px;
+        opacity: 0.6;
+      }
+      .nf-ctas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .btn-ghost {
+        background: transparent;
+        font-family: "DM Sans", sans-serif;
+        font-size: 11.5px;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        border: 1.5px solid rgba(255, 255, 255, 0.25);
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+        transition:
+          border-color 0.2s,
+          color 0.2s;
+      }
+      .btn-ghost:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+        color: #fff;
+      }
+      .not-found-inner > * {
+        animation: fadeUp 0.7s ease forwards;
+        opacity: 0;
+      }
+      .not-found-inner > *:nth-child(1) {
+        animation-delay: 0.05s;
+      }
+      .not-found-inner > *:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .not-found-inner > *:nth-child(3) {
+        animation-delay: 0.27s;
+      }
+      .not-found-inner > *:nth-child(4) {
+        animation-delay: 0.39s;
+      }
+      .not-found-inner > *:nth-child(5) {
+        animation-delay: 0.49s;
+      }
+      .not-found-inner > *:nth-child(6) {
+        animation-delay: 0.57s;
+      }
+      @media (max-width: 768px) {
+        main {
+          padding: 72px 24px;
+        }
+      }
+      @media (max-width: 480px) {
+        main {
+          padding: 56px 20px;
+        }
+        .nf-ctas {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .btn-white,
+        .btn-ghost {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <div class="not-found-inner">
+        <div class="nf-code">404</div>
+        <div class="nf-eyebrow">
+          <div class="nf-eyebrow-line"></div>
+          <div class="nf-eyebrow-text">Page not found</div>
+          <div class="nf-eyebrow-line"></div>
+        </div>
+        <h1 class="nf-headline">
+          Looks like this page<br /><em>took a wrong turn.</em>
+        </h1>
+        <p class="nf-body">
+          The page you're looking for doesn't exist or may have moved. Let's get
+          you back on the right path.
+        </p>
+        <div class="nf-divider"></div>
+        <div class="nf-ctas">
+          <a href="index.html" class="btn-white btn-white-teal"
+            >Back to Homepage</a
+          >
+          <a href="get-involved.html" class="btn-ghost">Get Involved</a>
+        </div>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="site.js"></script>
+  </body>
+</html>
