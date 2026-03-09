@@ -32,9 +32,9 @@
 }
 .eyebrow-text {
   font-family: "DM Sans", sans-serif;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--teal-mid);
 }
@@ -70,7 +70,7 @@
 }
 .page-header-nav-label {
   font-family: "DM Sans", sans-serif;
-  font-size: 9.5px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -163,7 +163,7 @@
 }
 .company-callout-label {
   font-family: "DM Sans", sans-serif;
-  font-size: 9.5px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -250,7 +250,7 @@
 }
 .timeline-year {
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -325,9 +325,9 @@
 }
 .arc-eyebrow-text {
   font-family: "DM Sans", sans-serif;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -402,7 +402,7 @@
 }
 .role-org {
   font-family: "DM Sans", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--text-lt);

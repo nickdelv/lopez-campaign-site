@@ -187,7 +187,7 @@ footer {
 }
 .footer-col-title {
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -230,14 +230,14 @@ footer {
 }
 .footer-legal {
   font-family: "DM Sans", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.18);
   line-height: 1.6;
 }
 .footer-credit {
   font-family: "DM Sans", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.18);
 }
@@ -257,9 +257,9 @@ footer {
 }
 .section-eyebrow-text {
   font-family: "DM Sans", sans-serif;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--amber);
 }
@@ -321,9 +321,9 @@ footer {
 }
 .cta-eyebrow {
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 14px;

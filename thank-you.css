@@ -76,9 +76,9 @@ main::after {
 }
 .ty-eyebrow-text {
   font-family: "DM Sans", sans-serif;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
 }
