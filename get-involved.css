@@ -66,7 +66,7 @@
 .page-header-sub {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.72;
   color: rgba(255, 255, 255, 0.62);
   max-width: 580px;
@@ -119,8 +119,8 @@
 }
 .way-body {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.72;
   color: var(--text-lt);
 }
@@ -151,7 +151,7 @@
 .form-intro-body {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   color: var(--text-lt);
 }
@@ -167,8 +167,8 @@
 }
 .form-promise-text {
   font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.65;
   color: var(--teal-mid);
 }
@@ -250,7 +250,7 @@ select,
 textarea {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text);
   background: var(--white);
   border: 1.5px solid rgba(26, 92, 90, 0.18);
@@ -328,8 +328,8 @@ textarea {
 }
 .checkbox-label {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   color: var(--text);
   line-height: 1.4;
   user-select: none;
@@ -361,8 +361,8 @@ textarea {
 
 .form-note {
   font-family: "DM Sans", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
   color: var(--text-lt);
   line-height: 1.6;
   opacity: 0.7;
