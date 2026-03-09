@@ -80,7 +80,7 @@
 .hero-body {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.72;
   color: var(--text-lt);
   max-width: 460px;
@@ -151,7 +151,7 @@
 .why-body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   color: var(--text-lt);
 }
@@ -271,8 +271,8 @@
 }
 .issue-body {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.72;
   color: rgba(255, 255, 255, 0.52);
 }
@@ -341,7 +341,7 @@
 .endorsement-title {
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-lt);
   margin-top: 3px;
   letter-spacing: 0.04em;
@@ -397,8 +397,8 @@
 }
 .cred-detail {
   font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   color: var(--text-lt);
   margin-top: 2px;
   line-height: 1.5;
@@ -406,7 +406,7 @@
 .bio-body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   color: var(--text-lt);
 }
@@ -474,8 +474,8 @@
 }
 .record-desc {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.65;
   color: var(--text-lt);
 }

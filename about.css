@@ -53,7 +53,7 @@
 .page-header-sub {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   color: var(--text-lt);
   margin-top: 20px;
@@ -108,7 +108,7 @@
 .prose {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.85;
   color: var(--text-lt);
 }
@@ -180,8 +180,8 @@
 }
 .company-callout-detail {
   font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.65;
   color: var(--text-lt);
 }
@@ -267,8 +267,8 @@
 }
 .timeline-desc {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.7;
   color: var(--text-lt);
 }
@@ -334,7 +334,7 @@
 .arc-body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.62);
 }
