@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="shared.css?v=6" />
+    <link rel="stylesheet" href="shared.css?v=7" />
     <style>
       body {
         min-height: 100vh;
@@ -24,7 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 96px 64px;
+        padding: var(--sp-2xl) var(--pad-x);
         position: relative;
         overflow: hidden;
       }
@@ -165,15 +165,7 @@
       .not-found-inner > *:nth-child(6) {
         animation-delay: 0.57s;
       }
-      @media (max-width: 768px) {
-        main {
-          padding: 72px 24px;
-        }
-      }
       @media (max-width: 480px) {
-        main {
-          padding: 56px 20px;
-        }
         .nf-ctas {
           flex-direction: column;
           align-items: stretch;
@@ -215,6 +207,6 @@
 
     <div id="site-footer"></div>
 
-    <script src="site.js"></script>
+    <script src="site.js?v=7"></script>
   </body>
 </html>

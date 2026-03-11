@@ -1,7 +1,7 @@
 /* ══ PAGE HEADER ══ */
 .page-header {
   background: var(--teal-pale);
-  padding: 80px 64px 72px;
+  padding: var(--sp-xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: 80px;
@@ -123,7 +123,7 @@
 /* ══ EARLY LIFE ══ */
 .early-life {
   background: var(--white);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -144,7 +144,7 @@
 /* ══ CAREER ══ */
 .career {
   background: var(--linen);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -189,7 +189,7 @@
 /* ══ PUBLIC SERVICE ══ */
 .service {
   background: var(--white);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
 }
 .service-inner {
   display: grid;
@@ -276,7 +276,7 @@
 /* ══ THE SELECT BOARD ARC — dark feature section ══ */
 .arc {
   background: var(--teal);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   position: relative;
   overflow: hidden;
 }
@@ -356,7 +356,7 @@
 /* ══ WHERE SHE STANDS NOW ══ */
 .now {
   background: var(--linen);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -427,7 +427,6 @@
 @media (max-width: 1024px) {
   .page-header {
     grid-template-columns: 1fr;
-    padding: 72px 40px 64px;
   }
   .page-header-nav {
     display: none;
@@ -435,17 +434,10 @@
   .early-life,
   .career,
   .now {
-    padding: 80px 40px;
     gap: 48px;
-  }
-  .service {
-    padding: 80px 40px;
   }
   .service-inner {
     gap: 48px;
-  }
-  .arc {
-    padding: 80px 40px;
   }
   .arc-inner {
     gap: 48px;
@@ -454,9 +446,6 @@
 
 /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
 @media (max-width: 768px) {
-  .page-header {
-    padding: 48px 24px 40px;
-  }
   .page-header-headline {
     font-size: clamp(44px, 9vw, 72px);
   }
@@ -464,37 +453,14 @@
   .career,
   .now {
     grid-template-columns: 1fr;
-    padding: 64px 24px;
     gap: 40px;
-  }
-  .service {
-    padding: 64px 24px;
   }
   .service-inner {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .arc {
-    padding: 64px 24px;
-  }
   .arc-inner {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-}
-
-/* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
-@media (max-width: 480px) {
-  .page-header {
-    padding: 36px 20px 32px;
-  }
-  .early-life,
-  .career,
-  .now {
-    padding: 48px 20px;
-  }
-  .service,
-  .arc {
-    padding: 48px 20px;
   }
 }

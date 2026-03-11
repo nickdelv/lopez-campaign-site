@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 480px 1fr;
   align-items: center;
-  padding: 0 64px;
+  padding: 0 var(--pad-x);
   position: relative;
   overflow: hidden;
 }
@@ -40,7 +40,7 @@
   filter: drop-shadow(12px 0 40px rgba(26, 92, 90, 0.15));
 }
 .hero-content {
-  padding: 0 0 0 64px;
+  padding: 0 0 0 var(--pad-x);
   position: relative;
   z-index: 2;
 }
@@ -128,7 +128,7 @@
 /* ══ WHY I'M RUNNING ══ */
 .why {
   background: var(--white);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -182,7 +182,7 @@
 /* ══ ISSUES ══ */
 .issues {
   background: var(--teal);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   position: relative;
   overflow: hidden;
 }
@@ -306,7 +306,7 @@
 /* ══ ENDORSEMENTS ══ */
 .endorsements {
   background: var(--linen);
-  padding: 80px 64px 0;
+  padding: var(--sp-xl) var(--pad-x) 0;
 }
 .endorsements-grid {
   display: grid;
@@ -350,7 +350,7 @@
 /* ══ BIO TEASER ══ */
 .bio-teaser {
   background: var(--linen);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 80px;
@@ -417,7 +417,7 @@
 /* ══ TRACK RECORD ══ */
 .record {
   background: var(--white);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
 }
 .record-header {
   text-align: center;
@@ -504,29 +504,16 @@
 
 /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
 @media (max-width: 1024px) {
-  .hero {
-    padding: 0 40px;
-  }
-  .hero-content {
-    padding: 0 0 0 40px;
-  }
-  .why {
-    padding: 80px 40px;
-  }
-  .issues {
-    padding: 80px 40px;
+  .hero-photo {
+    max-height: 520px;
   }
   .issues-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .bio-teaser {
-    padding: 80px 40px;
-  }
-  .record {
-    padding: 80px 40px;
-  }
-  .endorsements {
-    padding: 64px 40px;
+  .hero-ctas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 }
 
@@ -553,18 +540,14 @@
     object-position: center bottom;
   }
   .hero-content {
-    padding: 44px 24px 60px;
+    padding: 44px var(--pad-x) 60px;
   }
   .hero-headline {
     max-width: 100%;
   }
   .why {
     grid-template-columns: 1fr;
-    padding: 64px 24px;
     gap: 40px;
-  }
-  .issues {
-    padding: 64px 24px;
   }
   .issue-card--featured {
     grid-template-columns: 1fr;
@@ -589,20 +572,13 @@
   }
   .bio-teaser {
     grid-template-columns: 1fr;
-    padding: 64px 24px;
     gap: 40px;
-  }
-  .record {
-    padding: 64px 24px;
   }
   .record-grid {
     grid-template-columns: 1fr;
   }
   .record-header {
     max-width: 100%;
-  }
-  .endorsements {
-    padding: 48px 24px;
   }
   .endorsements-grid {
     grid-template-columns: 1fr;
@@ -615,33 +591,16 @@
     height: auto;
   }
   .hero-content {
-    padding: 36px 20px 52px;
+    padding: 36px var(--pad-x) 52px;
   }
   .hero-ctas {
-    flex-direction: column;
     align-items: stretch;
-    gap: 12px;
   }
   .btn-primary,
   .btn-secondary {
     text-align: center;
   }
-  .why {
-    padding: 48px 20px;
-  }
-  .issues {
-    padding: 48px 20px;
-  }
   .issues-grid {
     grid-template-columns: 1fr;
-  }
-  .bio-teaser {
-    padding: 48px 20px;
-  }
-  .record {
-    padding: 48px 20px;
-  }
-  .endorsements {
-    padding: 40px 20px;
   }
 }

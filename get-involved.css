@@ -1,7 +1,7 @@
 /* ══ PAGE HEADER ══ */
 .page-header {
   background: var(--teal);
-  padding: 96px 64px 88px;
+  padding: var(--sp-2xl) var(--pad-x);
   position: relative;
   overflow: hidden;
 }
@@ -75,7 +75,7 @@
 /* ══ WAYS TO HELP ══ */
 .ways {
   background: var(--linen);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
 }
 .ways-header {
   margin-bottom: 48px;
@@ -128,7 +128,7 @@
 /* ══ FORM SECTION ══ */
 .form-section {
   background: var(--white);
-  padding: 96px 64px;
+  padding: var(--sp-2xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 96px;
@@ -385,35 +385,21 @@ textarea {
 
 /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
 @media (max-width: 1024px) {
-  .page-header {
-    padding: 80px 40px 72px;
-  }
-  .ways {
-    padding: 80px 40px;
-  }
   .ways-grid {
     grid-template-columns: 1fr 1fr;
   }
   .form-section {
-    padding: 80px 40px;
     gap: 56px;
   }
 }
 
 /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
 @media (max-width: 768px) {
-  .page-header {
-    padding: 56px 24px 48px;
-  }
   .page-header-headline {
     font-size: clamp(44px, 9vw, 72px);
   }
-  .ways {
-    padding: 64px 24px;
-  }
   .form-section {
     grid-template-columns: 1fr;
-    padding: 64px 24px;
     gap: 48px;
   }
   .form-row {
@@ -423,16 +409,7 @@ textarea {
 
 /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
 @media (max-width: 480px) {
-  .page-header {
-    padding: 40px 20px 36px;
-  }
-  .ways {
-    padding: 48px 20px;
-  }
   .ways-grid {
     grid-template-columns: 1fr;
-  }
-  .form-section {
-    padding: 48px 20px;
   }
 }
