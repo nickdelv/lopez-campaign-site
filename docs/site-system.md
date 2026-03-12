@@ -9,8 +9,8 @@ Hand-built static site. No framework, no build step, no package manager. Deploye
 Each page loads two stylesheets in order:
 
 ```html
-<link rel="stylesheet" href="css/shared.css?v=7" />
-<link rel="stylesheet" href="css/[page].css?v=7" />
+<link rel="stylesheet" href="css/shared.css?v=1.1" />
+<link rel="stylesheet" href="css/[page].css?v=1.1" />
 ```
 
 The cascade does the work: shared styles load first, page CSS overrides what it needs to. No CSS modules, no scoping — just the natural cascade.
@@ -56,11 +56,11 @@ To update the nav or footer, edit the fragment in `/components`. Changes apply t
 
 ## Cache Busting
 
-Asset URLs include `?v=7` query strings for cache invalidation:
+Asset URLs include `?v=1.1` query strings for cache invalidation:
 
 ```html
-<link rel="stylesheet" href="css/shared.css?v=7" />
-<script src="js/site.js?v=7"></script>
+<link rel="stylesheet" href="css/shared.css?v=1.1" />
+<script src="js/site.js?v=1.1"></script>
 ```
 
 Increment the version number on any release where you want to force a cache refresh.

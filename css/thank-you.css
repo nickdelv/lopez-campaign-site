@@ -61,26 +61,8 @@ main::after {
   stroke-width: 2.5;
   fill: none;
 }
-.ty-eyebrow {
-  display: flex;
-  align-items: center;
+.thank-you-inner .section-eyebrow {
   justify-content: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-.ty-eyebrow-line {
-  width: 24px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.25);
-  flex-shrink: 0;
-}
-.ty-eyebrow-text {
-  font-family: "DM Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
 }
 .ty-headline {
   font-family: "Cormorant Garamond", serif;
