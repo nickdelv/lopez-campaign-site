@@ -4,7 +4,7 @@
   padding: var(--sp-xl) var(--pad-x);
   display: grid;
   grid-template-columns: 1fr 420px;
-  gap: 80px;
+  gap: var(--gap-grid);
   align-items: end;
   position: relative;
   overflow: hidden;
@@ -24,13 +24,13 @@
   gap: 14px;
   margin-bottom: 20px;
 }
-.eyebrow-line {
+.page-header-eyebrow .eyebrow-line {
   width: 28px;
   height: 2px;
   background: var(--amber);
   flex-shrink: 0;
 }
-.eyebrow-text {
+.page-header-eyebrow .eyebrow-text {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -103,7 +103,7 @@
 }
 
 .section-headline {
-  margin-bottom: 32px;
+  margin-bottom: var(--sp-sm);
 }
 .prose {
   font-family: "DM Sans", sans-serif;
@@ -124,34 +124,20 @@
 .early-life {
   background: var(--white);
   padding: var(--sp-2xl) var(--pad-x);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
 }
-.pull-quote {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.55;
-  color: var(--teal-mid);
-  padding: 28px 0 28px 24px;
-  border-left: 3px solid var(--amber);
-  margin-top: 36px;
-}
-
 /* ══ CAREER ══ */
 .career {
   background: var(--linen);
   padding: var(--sp-2xl) var(--pad-x);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
 }
 .career-right {
   padding-top: 8px;
+}
+.career-right img {
+  width: 100%;
+  max-width: 380px;
+  display: block;
+  filter: drop-shadow(8px 8px 0 rgba(26, 92, 90, 0.12));
 }
 
 /* Haemonetics callout */
@@ -160,6 +146,7 @@
   border-left: 3px solid var(--teal);
   padding: 28px 32px;
   margin-top: 36px;
+  max-width: 380px;
 }
 .company-callout-label {
   font-family: "DM Sans", sans-serif;
@@ -190,12 +177,6 @@
 .service {
   background: var(--white);
   padding: var(--sp-2xl) var(--pad-x);
-}
-.service-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
 }
 
 /* Timeline */
@@ -292,9 +273,6 @@
   pointer-events: none;
 }
 .arc-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -312,25 +290,6 @@
   font-style: italic;
   color: var(--teal-light);
 }
-.arc-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 16px;
-}
-.arc-eyebrow-line {
-  width: 24px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.25);
-}
-.arc-eyebrow-text {
-  font-family: "DM Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-}
 .arc-body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -341,26 +300,13 @@
 .arc-body p + p {
   margin-top: 18px;
 }
-.arc-pull {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 22px;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
-  padding: 24px 0 24px 22px;
-  border-left: 3px solid var(--amber);
-  margin-top: 28px;
+.arc-body strong {
+  color: #fff;
 }
-
 /* ══ WHERE SHE STANDS NOW ══ */
 .now {
   background: var(--linen);
   padding: var(--sp-2xl) var(--pad-x);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
 }
 
 /* Current roles grid */
@@ -431,36 +377,11 @@
   .page-header-nav {
     display: none;
   }
-  .early-life,
-  .career,
-  .now {
-    gap: 48px;
-  }
-  .service-inner {
-    gap: 48px;
-  }
-  .arc-inner {
-    gap: 48px;
-  }
 }
 
 /* ══ RESPONSIVE — MOBILE (≤768px) ══ */
 @media (max-width: 768px) {
   .page-header-headline {
     font-size: clamp(44px, 9vw, 72px);
-  }
-  .early-life,
-  .career,
-  .now {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .service-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .arc-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
   }
 }

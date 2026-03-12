@@ -1,3 +1,44 @@
+/* ============================================================
+   Site CSS Architecture
+
+   This project uses a lightweight static CSS architecture:
+
+   1. shared.css
+      - global reset + base typography
+      - design tokens (colors, spacing, layout)
+      - shared components (header, footer, buttons, utilities)
+
+   2. Page CSS files
+      - index.css
+      - about.css
+      - get-involved.css
+      - thank-you.css
+
+      These contain only page-specific layout and overrides.
+
+   Loading order (in HTML):
+
+      shared.css
+      → page.css
+
+   The cascade handles overrides naturally. No CSS framework,
+   preprocessor, or build step is used.
+
+   Key shared utilities:
+      .section-grid       → standard 2-column editorial layout
+      .section-eyebrow    → section label pattern
+      .pull-quote         → editorial quote block
+      .dual-cta           → full-width action section
+
+   Spacing system:
+      Layout spacing uses tokens such as:
+      --sp-2xl, --sp-xl, --sp-lg, --sp-md, --sp-sm
+
+   This file is intentionally the single source of truth for
+   global layout primitives and reusable UI patterns.
+
+   ============================================================ */
+
 /* ══ BASE ══ */
 * {
   margin: 0;
@@ -17,6 +58,11 @@
   --text-lt: #5a6e6d;
   --sp-2xl: 96px;
   --sp-xl: 80px;
+  --sp-lg: 64px;
+  --sp-md: 48px;
+  --sp-sm: 32px;
+  --sp-xs: 24px;
+  --gap-grid: 80px;
   --pad-x: 64px;
 }
 html {
@@ -139,13 +185,13 @@ header nav a.active {
 /* ══ FOOTER ══ */
 footer {
   background: var(--black);
-  padding: 64px var(--pad-x) 40px;
+  padding: var(--sp-lg) var(--pad-x) 40px;
 }
 .footer-top {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  gap: 48px;
-  padding-bottom: 48px;
+  gap: var(--sp-md);
+  padding-bottom: var(--sp-md);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 .footer-logo-lisa {
@@ -265,9 +311,15 @@ footer {
   text-transform: uppercase;
   color: var(--amber);
 }
+.section-eyebrow--dark .section-eyebrow-line {
+  background: rgba(255, 255, 255, 0.25);
+}
+.section-eyebrow--dark .section-eyebrow-text {
+  color: rgba(255, 255, 255, 0.45);
+}
 .section-headline {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(36px, 3.4vw, 52px);
+  font-size: clamp(38px, 3.6vw, 56px);
   font-weight: 300;
   line-height: 1.1;
   color: var(--teal);
@@ -275,6 +327,30 @@ footer {
 }
 .section-headline em {
   font-style: italic;
+}
+
+/* ══ SECTION GRID ══ */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-grid);
+  align-items: start;
+}
+
+/* ══ PULL QUOTE ══ */
+.pull-quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--teal-mid);
+  padding: 28px 0 28px 24px;
+  border-left: 3px solid var(--amber);
+  margin-top: 36px;
+}
+.pull-quote--light {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ══ DUAL CTA ══ */
@@ -398,6 +474,61 @@ footer {
   color: var(--amber);
 }
 
+/* ══ BUTTONS ══ */
+.btn-primary {
+  background: var(--teal);
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: var(--teal-mid);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--teal);
+  font-family: "DM Sans", sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 1.5px solid rgba(26, 92, 90, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-ghost {
+  background: transparent;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
 /* ══ ANIMATIONS ══ */
 @keyframes fadeUp {
   from {
@@ -449,6 +580,9 @@ footer {
     --sp-xl: 64px;
     --pad-x: 40px;
   }
+  .section-grid {
+    gap: 48px;
+  }
   footer {
     padding: 48px var(--pad-x) 32px;
   }
@@ -472,6 +606,10 @@ footer {
     --sp-2xl: 64px;
     --sp-xl: 56px;
     --pad-x: 24px;
+  }
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   header {
     height: auto;

@@ -45,8 +45,9 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="shared.css?v=7" />
-    <link rel="stylesheet" href="index.css?v=7" />
+    <!-- Cache busting: bump ?v= when deploying visible changes -->
+    <link rel="stylesheet" href="css/shared.css?v=1.1" />
+    <link rel="stylesheet" href="css/index.css?v=1.1" />
   </head>
   <body>
     <div id="site-header"></div>
@@ -84,7 +85,7 @@
       </div>
     </section>
 
-    <section class="why" id="why">
+    <section class="why section-grid" id="why">
       <div>
         <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
@@ -93,7 +94,7 @@
         <h2 class="section-headline">
           Time to get<br />back in <em>the ring.</em>
         </h2>
-        <blockquote class="why-pull">
+        <blockquote class="pull-quote">
           "Most people I know are struggling with how to respond, to keep the
           faith with what we hold dear. For me, it's time to contribute and
           serve the best way I know how."
@@ -130,9 +131,9 @@
 
     <section class="issues" id="issues">
       <div class="issues-header">
-        <div class="issues-eyebrow">
-          <div class="issues-eyebrow-line"></div>
-          <div class="issues-eyebrow-text">The Issues That Matter</div>
+        <div class="section-eyebrow section-eyebrow--dark">
+          <div class="section-eyebrow-line"></div>
+          <div class="section-eyebrow-text">The Issues That Matter</div>
         </div>
         <h2 class="issues-headline">
           What I'll fight for<br /><em>on Beacon Hill</em>
@@ -229,7 +230,7 @@
 
     <section class="bio-teaser" id="about">
       <div>
-        <div class="section-eyebrow" style="margin-bottom: 32px">
+        <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
           <div class="section-eyebrow-text">About Lisa</div>
         </div>
@@ -293,7 +294,7 @@
         </div>
       </div>
       <div>
-        <h2 class="section-headline" style="margin-bottom: 28px">
+        <h2 class="section-headline">
           A neighbor.<br />A fighter.<br /><em>A proven record.</em>
         </h2>
         <div class="bio-body">
@@ -316,7 +317,7 @@
             community — and the same approach I'll bring to Beacon Hill.
           </p>
         </div>
-        <div style="margin-top: 36px">
+        <div class="bio-cta">
           <a href="about.html" class="btn-primary">Read Full Biography</a>
         </div>
       </div>
@@ -329,7 +330,7 @@
           <div class="section-eyebrow-text">Track Record</div>
           <div class="section-eyebrow-line"></div>
         </div>
-        <h2 class="section-headline" style="text-align: center">
+        <h2 class="section-headline">
           Getting things done<br /><em>for this community</em>
         </h2>
       </div>
@@ -398,6 +399,6 @@
 
     <div id="site-footer"></div>
 
-    <script src="site.js?v=7"></script>
+    <script src="js/site.js?v=1.1"></script>
   </body>
 </html>

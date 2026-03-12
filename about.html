@@ -45,8 +45,9 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="shared.css?v=7" />
-    <link rel="stylesheet" href="about.css?v=7" />
+    <!-- Cache busting: bump ?v= when deploying visible changes -->
+    <link rel="stylesheet" href="css/shared.css?v=1.1" />
+    <link rel="stylesheet" href="css/about.css?v=1.1" />
   </head>
   <body>
     <div id="site-header"></div>
@@ -78,7 +79,7 @@
     </section>
 
     <!-- ═══ EARLY LIFE ═══ -->
-    <section class="early-life" id="early-life">
+    <section class="early-life section-grid" id="early-life">
       <div>
         <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
@@ -125,7 +126,7 @@
     </section>
 
     <!-- ═══ CAREER ═══ -->
-    <section class="career" id="career">
+    <section class="career section-grid" id="career">
       <div>
         <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
@@ -164,14 +165,8 @@
         <img
           src="assets/images/lisa-headshot.png?v=2"
           alt="Lisa Lopez, former Chief Legal Officer at Haemonetics Corporation"
-          style="
-            width: 100%;
-            max-width: 380px;
-            display: block;
-            filter: drop-shadow(8px 8px 0 rgba(26, 92, 90, 0.12));
-          "
         />
-        <div class="company-callout" style="max-width: 380px">
+        <div class="company-callout">
           <div class="company-callout-label">25 Years At</div>
           <div class="company-callout-name">Haemonetics Corporation</div>
           <div class="company-callout-detail">
@@ -185,7 +180,7 @@
 
     <!-- ═══ PUBLIC SERVICE ═══ -->
     <section class="service" id="service">
-      <div class="service-inner">
+      <div class="service-inner section-grid">
         <div>
           <div class="section-eyebrow">
             <div class="section-eyebrow-line"></div>
@@ -318,11 +313,11 @@
 
     <!-- ═══ THE SELECT BOARD ARC ═══ -->
     <section class="arc" id="select-board">
-      <div class="arc-inner">
+      <div class="arc-inner section-grid">
         <div>
-          <div class="arc-eyebrow">
-            <div class="arc-eyebrow-line"></div>
-            <div class="arc-eyebrow-text">The Select Board</div>
+          <div class="section-eyebrow section-eyebrow--dark">
+            <div class="section-eyebrow-line"></div>
+            <div class="section-eyebrow-text">The Select Board</div>
           </div>
           <h2 class="arc-headline">
             She lost.<br />She ran again.<br /><em>She won.</em>
@@ -337,17 +332,14 @@
             </p>
             <p>
               The following year she ran again, and won — becoming only the
-              <strong style="color: #fff">third woman in history</strong> to
-              serve on Canton's Select Board. During her tenure she championed
-              the town's
-              <strong style="color: #fff"
-                >municipal energy aggregation program</strong
-              >
+              <strong>third woman in history</strong> to serve on Canton's
+              Select Board. During her tenure she championed the town's
+              <strong>municipal energy aggregation program</strong>
               (Canton Electrical Choice), delivering cleaner and cheaper energy
               to residents. She championed the
-              <strong style="color: #fff">Affordable Housing Trust</strong> to
-              address housing instability among seniors, veterans, disabled
-              adults, and young families.
+              <strong>Affordable Housing Trust</strong> to address housing
+              instability among seniors, veterans, disabled adults, and young
+              families.
             </p>
             <p>
               During the COVID years she collaborated with the Department of
@@ -359,7 +351,7 @@
               anyway, because that's who she is.
             </p>
           </div>
-          <blockquote class="arc-pull">
+          <blockquote class="pull-quote pull-quote--light">
             "Covid demonstrated Canton at its best. Municipal employees and
             residents pulled together to keep everyone safe."
           </blockquote>
@@ -368,7 +360,7 @@
     </section>
 
     <!-- ═══ WHERE SHE STANDS NOW ═══ -->
-    <section class="now" id="now">
+    <section class="now section-grid" id="now">
       <div>
         <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
@@ -396,7 +388,7 @@
         </div>
       </div>
       <div>
-        <div class="section-eyebrow" style="margin-bottom: 20px">
+        <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
           <div class="section-eyebrow-text">Current Roles</div>
         </div>
@@ -485,6 +477,6 @@
 
     <div id="site-footer"></div>
 
-    <script src="site.js?v=7"></script>
+    <script src="js/site.js?v=1.1"></script>
   </body>
 </html>

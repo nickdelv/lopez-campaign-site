@@ -10,7 +10,7 @@
       });
   }
 
-  loadInclude("site-header", "header.html", function () {
+  loadInclude("site-header", "components/header.html", function () {
     // Active nav state
     var page = location.pathname.split("/").pop() || "index";
     if (page.includes(".")) page = page.split(".")[0]; // strip .html if present
@@ -39,5 +39,5 @@
     }
   });
 
-  loadInclude("site-footer", "footer.html");
+  loadInclude("site-footer", "components/footer.html");
 })();
