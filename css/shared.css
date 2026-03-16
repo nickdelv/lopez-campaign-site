@@ -270,6 +270,24 @@ footer {
   color: var(--amber);
   text-decoration: none;
 }
+.footer-social {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 18px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.footer-social-link:hover {
+  opacity: 1;
+}
+.footer-social-link img {
+  display: block;
+}
 .footer-bottom {
   display: flex;
   align-items: center;
