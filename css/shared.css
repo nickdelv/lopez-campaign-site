@@ -421,11 +421,8 @@ footer {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 14px;
-}
-.cta-volunteer .cta-eyebrow {
   color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 14px;
 }
 .cta-headline {
   font-family: "Cormorant Garamond", serif;
