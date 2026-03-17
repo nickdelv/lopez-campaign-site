@@ -135,6 +135,7 @@
 }
 .career-right img {
   width: 100%;
+  height: auto;
   max-width: 380px;
   display: block;
   filter: drop-shadow(8px 8px 0 rgba(26, 92, 90, 0.12));
