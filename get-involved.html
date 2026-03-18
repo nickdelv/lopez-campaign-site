@@ -65,7 +65,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <!-- Cache busting: bump ?v= when deploying visible changes -->
     <link rel="stylesheet" href="css/shared.css?v=1.2" />
-    <link rel="stylesheet" href="css/get-involved.css?v=1.2" />
+    <link rel="stylesheet" href="css/get-involved.css?v=1.3" />
   </head>
   <body>
     <div id="site-header"></div>
@@ -356,6 +356,15 @@
           <div>
             <button type="submit" class="btn-submit">Sign Me Up</button>
           </div>
+
+          <input
+            type="text"
+            name="website"
+            id="website"
+            tabindex="-1"
+            autocomplete="off"
+            class="honeypot-field"
+          />
 
           <p class="form-note">
             By submitting this form you agree to be contacted by the Lisa Lopez
