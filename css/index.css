@@ -36,7 +36,7 @@
   object-position: bottom;
   display: block;
   transform: scale(1.35);
-  transform-origin: center bottom;
+  transform-origin: center 70%;
   filter: drop-shadow(12px 0 40px rgba(26, 92, 90, 0.15));
 }
 .hero-content {
@@ -95,7 +95,7 @@
 /* ══ WHY I'M RUNNING ══ */
 .why {
   background: var(--white);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 .why .pull-quote {
   padding-top: 0;
@@ -135,7 +135,7 @@
 /* ══ ISSUES ══ */
 .issues {
   background: var(--teal);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
   position: relative;
   overflow: hidden;
 }
@@ -239,7 +239,7 @@
 /* ══ ENDORSEMENTS ══ */
 .endorsements {
   background: var(--linen);
-  padding: var(--sp-xl) var(--pad-x) 0;
+  padding: var(--sp-xl) 0 0;
 }
 .endorsements-grid {
   display: grid;
@@ -283,7 +283,9 @@
 /* ══ BIO TEASER ══ */
 .bio-teaser {
   background: var(--linen);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
+}
+.bio-teaser .container {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: var(--gap-grid);
@@ -359,7 +361,7 @@
 /* ══ TRACK RECORD ══ */
 .record {
   background: var(--white);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 .record-header {
   text-align: center;
@@ -511,7 +513,7 @@
   .issue-card--featured .issue-body {
     display: block;
   }
-  .bio-teaser {
+  .bio-teaser .container {
     grid-template-columns: 1fr;
     gap: 40px;
   }

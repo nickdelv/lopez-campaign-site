@@ -1,13 +1,15 @@
 /* ══ PAGE HEADER ══ */
 .page-header {
   background: var(--teal-pale);
-  padding: var(--sp-xl) var(--pad-x);
+  padding: var(--sp-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+.page-header .container {
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: var(--gap-grid);
   align-items: end;
-  position: relative;
-  overflow: hidden;
 }
 .page-header::after {
   content: "";
@@ -123,12 +125,12 @@
 /* ══ EARLY LIFE ══ */
 .early-life {
   background: var(--white);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 /* ══ CAREER ══ */
 .career {
   background: var(--linen);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 .career-right {
   padding-top: 8px;
@@ -177,7 +179,7 @@
 /* ══ PUBLIC SERVICE ══ */
 .service {
   background: var(--white);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 
 /* Timeline */
@@ -258,7 +260,7 @@
 /* ══ THE SELECT BOARD ARC — dark feature section ══ */
 .arc {
   background: var(--teal);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
   position: relative;
   overflow: hidden;
 }
@@ -307,7 +309,7 @@
 /* ══ WHERE SHE STANDS NOW ══ */
 .now {
   background: var(--linen);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 
 /* Current roles grid */
@@ -372,7 +374,7 @@
 
 /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
 @media (max-width: 1024px) {
-  .page-header {
+  .page-header .container {
     grid-template-columns: 1fr;
   }
   .page-header-nav {

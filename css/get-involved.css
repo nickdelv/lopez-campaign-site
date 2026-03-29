@@ -10,7 +10,7 @@
 /* ══ PAGE HEADER ══ */
 .page-header {
   background: var(--teal);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
   position: relative;
   overflow: hidden;
 }
@@ -88,7 +88,7 @@
 /* ══ WAYS TO HELP ══ */
 .ways {
   background: var(--linen);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
 }
 .ways-header {
   margin-bottom: var(--sp-md);
@@ -141,7 +141,9 @@
 /* ══ FORM SECTION ══ */
 .form-section {
   background: var(--white);
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) 0;
+}
+.form-section .container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 96px;
@@ -401,7 +403,7 @@ textarea {
   .ways-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .form-section {
+  .form-section .container {
     gap: 56px;
   }
 }
@@ -411,7 +413,7 @@ textarea {
   .page-header-headline {
     font-size: clamp(44px, 9vw, 72px);
   }
-  .form-section {
+  .form-section .container {
     grid-template-columns: 1fr;
     gap: 48px;
   }

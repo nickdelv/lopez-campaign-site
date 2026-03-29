@@ -64,6 +64,14 @@
   --sp-xs: 24px;
   --gap-grid: 80px;
   --pad-x: 64px;
+  --content-max: 1280px;
+}
+
+/* ══ CONTAINER ══ */
+.container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
 }
 html {
   scroll-behavior: smooth;
