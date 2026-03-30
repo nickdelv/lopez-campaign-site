@@ -104,6 +104,9 @@ body {
 .announce-bar a:hover {
   border-bottom-color: #fff;
 }
+.announce-emoji {
+  color: #fff;
+}
 
 /* ══ HEADER ══ */
 header {
