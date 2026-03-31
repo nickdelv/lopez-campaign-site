@@ -86,7 +86,7 @@ body {
 /* ══ ANNOUNCEMENT BAR ══ */
 .announce-bar {
   background: var(--teal-mid);
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
