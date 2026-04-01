@@ -1,3 +1,13 @@
+# macOS
 .DS_Store
-Thumbs.db
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.pyc
+
+# Script
 compress-images.py
