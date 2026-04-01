@@ -593,8 +593,19 @@ footer {
     transform: translateX(0);
   }
 }
+@keyframes announcePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
 .announce-bar--animate .announce-inner {
-  animation: slideInLeft 0.65s ease-out forwards;
+  animation:
+    slideInLeft 1.2s ease-out forwards,
+    announcePulse 0.7s ease-in-out 1.2s forwards;
 }
 .announce-close {
   position: absolute;
