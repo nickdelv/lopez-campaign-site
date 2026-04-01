@@ -35,7 +35,7 @@
   object-fit: contain;
   object-position: bottom;
   display: block;
-  transform: scale(1.35);
+  transform: scale(1.15);
   transform-origin: center 70%;
   filter: drop-shadow(12px 0 40px rgba(26, 92, 90, 0.15));
 }
@@ -526,9 +526,6 @@
 
 /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
 @media (max-width: 1024px) {
-  .hero-photo {
-    max-height: 520px;
-  }
   .issues-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -557,6 +554,7 @@
     height: auto;
     width: 100%;
     max-width: 100%;
+    max-height: 520px;
     object-fit: contain;
     transform: none;
     object-position: center bottom;
@@ -605,9 +603,6 @@
 
 /* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
 @media (max-width: 480px) {
-  .hero-photo-col {
-    height: auto;
-  }
   .hero-content {
     padding: 36px var(--pad-x) 52px;
   }
