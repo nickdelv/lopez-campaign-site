@@ -109,6 +109,7 @@ body {
 }
 .announce-inner {
   display: block;
+  padding: 0 26px;
 }
 .announce-emoji {
   color: #fff;
