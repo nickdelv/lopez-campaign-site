@@ -76,6 +76,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  overflow-x: hidden;
 }
 body {
   font-family: "DM Sans", sans-serif;
@@ -93,6 +94,8 @@ body {
   letter-spacing: 0.06em;
   padding: 10px var(--pad-x);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .announce-bar a {
   color: #fff;
@@ -103,6 +106,9 @@ body {
 }
 .announce-bar a:hover {
   border-bottom-color: #fff;
+}
+.announce-inner {
+  display: block;
 }
 .announce-emoji {
   color: #fff;
@@ -576,6 +582,36 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.announce-bar--animate .announce-inner {
+  animation: slideInLeft 0.65s ease-out forwards;
+}
+.announce-close {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 0 4px;
+  transition: opacity 0.15s;
+}
+.announce-close:hover {
+  opacity: 1;
 }
 
 /* ══ HAMBURGER BUTTON ══ */

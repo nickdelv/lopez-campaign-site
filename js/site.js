@@ -37,6 +37,30 @@
         });
       });
     }
+
+    // Announcement bar
+    var bar = document.querySelector(".announce-bar");
+    if (bar) {
+      if (sessionStorage.getItem("bannerDismissed")) {
+        bar.style.display = "none";
+      } else {
+        if (!sessionStorage.getItem("bannerSeen")) {
+          bar.classList.add("announce-bar--animate");
+          sessionStorage.setItem("bannerSeen", "1");
+        }
+        var closeBtn = bar.querySelector(".announce-close");
+        if (closeBtn) {
+          closeBtn.addEventListener("click", function () {
+            bar.style.transition = "opacity 0.2s";
+            bar.style.opacity = "0";
+            setTimeout(function () {
+              bar.style.display = "none";
+              sessionStorage.setItem("bannerDismissed", "1");
+            }, 200);
+          });
+        }
+      }
+    }
   });
 
   loadInclude("site-footer", "components/footer.html");
