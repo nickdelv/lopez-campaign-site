@@ -391,7 +391,7 @@ footer {
   color: var(--teal-mid);
   padding: 28px 0 28px 24px;
   border-left: 3px solid var(--amber);
-  margin-top: 36px;
+  margin: 36px 0;
 }
 .pull-quote--light {
   color: rgba(255, 255, 255, 0.85);
