@@ -242,16 +242,21 @@
 }
 .issues-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2px;
 }
 .issue-card {
+  grid-column: span 2;
   background: rgba(255, 255, 255, 0.05);
   padding: 36px 28px 40px;
   border-top: 3px solid transparent;
   transition:
     background 0.25s,
     border-color 0.25s;
+}
+.issue-card:nth-child(4),
+.issue-card:nth-child(5) {
+  grid-column: span 3;
 }
 .issue-card:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -283,32 +288,6 @@
   font-weight: 400;
   line-height: 1.72;
   color: rgba(255, 255, 255, 0.52);
-}
-.issue-card--featured {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  gap: 0 40px;
-  padding: 36px 40px 40px;
-  border-top: 3px solid var(--amber);
-  background: rgba(255, 255, 255, 0.08);
-}
-.issue-featured-left {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  padding-right: 40px;
-  justify-content: flex-start;
-}
-.issue-card--featured .issue-num {
-  margin-bottom: 10px;
-  opacity: 0.45;
-  flex-shrink: 0;
-}
-.issue-card--featured .issue-title {
-  margin-bottom: 0;
 }
 
 /* ══ ENDORSEMENTS ══ */
@@ -527,7 +506,15 @@
 /* ══ RESPONSIVE — TABLET (≤1024px) ══ */
 @media (max-width: 1024px) {
   .issues-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .issue-card,
+  .issue-card:nth-child(4),
+  .issue-card:nth-child(5) {
+    grid-column: span 1;
+  }
+  .issue-card:last-child {
+    grid-column: 1 / -1;
   }
   .hero-ctas {
     flex-direction: column;
@@ -565,27 +552,6 @@
   .hero-headline {
     max-width: 100%;
   }
-  .issue-card--featured {
-    grid-template-columns: 1fr;
-  }
-  .issue-featured-left {
-    flex-direction: column;
-    align-items: flex-start;
-    border-right: none;
-    padding-right: 0;
-    gap: 0;
-  }
-  .issue-card--featured .issue-num {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  .issue-card--featured .issue-title {
-    font-size: 26px;
-    margin-bottom: 14px;
-  }
-  .issue-card--featured .issue-body {
-    display: block;
-  }
   .bio-teaser .container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -615,5 +581,11 @@
   }
   .issues-grid {
     grid-template-columns: 1fr;
+  }
+  .issue-card,
+  .issue-card:nth-child(4),
+  .issue-card:nth-child(5),
+  .issue-card:last-child {
+    grid-column: span 1;
   }
 }

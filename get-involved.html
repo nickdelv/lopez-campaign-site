@@ -211,7 +211,7 @@
             class="volunteer-form"
             id="volunteer-form"
             method="POST"
-            action="https://script.google.com/macros/s/AKfycbyJegwzFsdNYeSGlPahy_oXMYpA6QOyArbtjKb5-1yw1AYb0dTl_xlgWUp_tjbe0qjKqg/exec"
+            action="https://script.google.com/macros/s/AKfycbzkoCbMQLuECo7c_RbgUdoZF7uYCIz0VTm8e4W_I6bzkLszNtqDEQeVwnJKaJ4VF2Xiwg/exec"
           >
             <div class="form-row">
               <div class="form-field">
@@ -265,17 +265,32 @@
             </div>
 
             <div class="form-row">
+              <div class="form-field full">
+                <label for="street_address"
+                  >Street Address <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="street_address"
+                  name="streetAddress"
+                  placeholder="123 Main St"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
               <div class="form-field">
                 <label for="town"
                   >Your Town <span class="required">*</span></label
                 >
-                <select id="town" name="town" required>
-                  <option value="" disabled selected>Select your town</option>
-                  <option value="Canton">Canton</option>
-                  <option value="Stoughton">Stoughton</option>
-                  <option value="Avon">Avon</option>
-                  <option value="Other">Other</option>
-                </select>
+                <input
+                  type="text"
+                  id="town"
+                  name="town"
+                  placeholder="Canton"
+                  required
+                />
               </div>
             </div>
 
@@ -286,13 +301,13 @@
                 >How would you like to help?
                 <span class="required">*</span></label
               >
-              <input type="hidden" name="help" id="help-hidden" />
               <div class="checkbox-group">
                 <label class="checkbox-item">
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Knock doors / canvass my neighborhood"
+                    name="helpDoors"
+                    value="Yes"
                   />
                   <span class="checkbox-label"
                     >Knock doors / canvass my neighborhood</span
@@ -302,7 +317,8 @@
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Phone bank from home"
+                    name="helpPhoneBank"
+                    value="Yes"
                   />
                   <span class="checkbox-label">Phone bank from home</span>
                 </label>
@@ -310,7 +326,8 @@
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Write postcards to friends and neighbors"
+                    name="helpPostcards"
+                    value="Yes"
                   />
                   <span class="checkbox-label"
                     >Write postcards to friends &amp; neighbors</span
@@ -320,7 +337,8 @@
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Host a living room event"
+                    name="helpHostEvent"
+                    value="Yes"
                   />
                   <span class="checkbox-label">Host a living room event</span>
                 </label>
@@ -328,7 +346,8 @@
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Put up a yard sign"
+                    name="helpYardSign"
+                    value="Yes"
                   />
                   <span class="checkbox-label">Put up a yard sign</span>
                 </label>
@@ -336,7 +355,8 @@
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Share on social media"
+                    name="helpSocialMedia"
+                    value="Yes"
                   />
                   <span class="checkbox-label">Share on social media</span>
                 </label>
@@ -344,7 +364,8 @@
                   <input
                     type="checkbox"
                     class="volunteer-check"
-                    value="Something else - I will explain below"
+                    name="helpOther"
+                    value="Yes"
                   />
                   <span class="checkbox-label"
                     >Something else — I'll explain below</span
@@ -436,13 +457,6 @@
           e.preventDefault();
 
           if (document.getElementById("website").value) return;
-
-          var checked = Array.from(
-            document.querySelectorAll(".volunteer-check:checked"),
-          ).map(function (cb) {
-            return cb.value;
-          });
-          document.getElementById("help-hidden").value = checked.join(", ");
 
           var btn = form.querySelector('button[type="submit"]');
           btn.disabled = true;
