@@ -1,0 +1,198 @@
+/* ══ DONATE PAGE ══ */
+
+/* Intro section — echoes the hero pattern (teal-pale bg + amber left stripe) */
+.donate-intro {
+  background: var(--teal-pale);
+  padding: var(--sp-2xl) 0 var(--sp-xl);
+  position: relative;
+  overflow: hidden;
+}
+.donate-intro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--amber);
+}
+.donate-intro .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.donate-intro .eyebrow-line {
+  width: 28px;
+  height: 2px;
+  background: var(--amber);
+  flex-shrink: 0;
+}
+.donate-intro .eyebrow-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+}
+.donate-headline {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 4.5vw, 72px);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--teal);
+  letter-spacing: -0.01em;
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+.donate-headline em {
+  font-style: italic;
+  color: var(--teal-mid);
+}
+.donate-body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.72;
+  color: var(--text-lt);
+  max-width: 580px;
+}
+
+/* Options section */
+.donate-options {
+  background: var(--linen);
+  padding: var(--sp-2xl) 0;
+}
+.donate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+}
+.donate-card {
+  background: var(--white);
+  padding: 56px 48px 64px;
+  border-top: 3px solid var(--teal-light);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s;
+}
+.donate-card--online {
+  border-top-color: var(--amber);
+}
+.donate-card--check {
+  border-top-color: var(--teal);
+}
+.donate-card-eyebrow {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 20px;
+}
+.donate-card--check .donate-card-eyebrow {
+  color: var(--teal-mid);
+}
+.donate-card-headline {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--teal);
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.donate-card-headline em {
+  font-style: italic;
+  color: var(--teal-mid);
+}
+.donate-card-body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.72;
+  color: var(--text-lt);
+  margin-bottom: 28px;
+  max-width: 460px;
+}
+.donate-card .btn-primary {
+  align-self: flex-start;
+}
+
+/* Address block — mirrors the pull-quote motif (teal-pale bg + teal border) */
+.donate-address {
+  padding: 28px 32px;
+  background: var(--teal-pale);
+  border-left: 3px solid var(--teal);
+  align-self: flex-start;
+  max-width: 100%;
+}
+.donate-payee {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--teal);
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+.donate-street,
+.donate-city {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--teal);
+  line-height: 1.5;
+}
+
+/* Animations — match the hero fade-up pattern */
+.donate-intro .eyebrow,
+.donate-headline,
+.donate-body {
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+.donate-intro .eyebrow {
+  animation-delay: 0.1s;
+}
+.donate-headline {
+  animation-delay: 0.24s;
+}
+.donate-body {
+  animation-delay: 0.38s;
+}
+
+/* ══ RESPONSIVE — TABLET/MOBILE (≤768px) ══ */
+@media (max-width: 768px) {
+  .donate-intro {
+    padding: var(--sp-xl) 0;
+  }
+  .donate-grid {
+    grid-template-columns: 1fr;
+  }
+  .donate-card {
+    padding: 44px 32px 52px;
+  }
+  .donate-card-headline {
+    font-size: 36px;
+  }
+}
+
+/* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
+@media (max-width: 480px) {
+  .donate-card {
+    padding: 36px 24px 44px;
+  }
+  .donate-card-headline {
+    font-size: 32px;
+  }
+  .donate-address {
+    padding: 24px;
+  }
+  .donate-payee {
+    font-size: 24px;
+  }
+}
