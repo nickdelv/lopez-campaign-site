@@ -1,0 +1,328 @@
+/* ============================================================
+   Paul Revere Heritage Site — Page-Specific Styles
+
+   Loaded after shared.css, about.css, and index.css.
+   Contains only layouts and components unique to this page.
+   ============================================================ */
+
+/* ══ BEFORE & AFTER ══ */
+.before-after {
+  background: var(--linen);
+  padding: var(--sp-2xl) 0;
+}
+.before-after-hero {
+  position: relative;
+  overflow: hidden;
+  max-height: 560px;
+}
+.before-after-hero img {
+  width: 100%;
+  height: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  display: block;
+}
+.before-after-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px var(--pad-x);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+  color: #fff;
+}
+.before-after-prose {
+  max-width: 620px;
+  margin: 0 auto;
+  padding-top: var(--sp-lg);
+  padding-bottom: var(--sp-lg);
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-lt);
+  text-align: center;
+}
+.before-after-prose p + p {
+  margin-top: 20px;
+}
+
+/* ══ STORY ══ */
+.story {
+  background: var(--white);
+  padding: var(--sp-2xl) 0;
+}
+.story-beat {
+  padding: var(--sp-lg) 0;
+}
+.story-beat + .story-beat {
+  border-top: 1px solid rgba(26, 92, 90, 0.08);
+}
+.story-beat:first-child {
+  padding-top: 0;
+}
+.story-beat-marker {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 20px;
+}
+
+/* Prose list styling (Plan beat) */
+.story .prose ul {
+  margin: 20px 0;
+  padding-left: 24px;
+  list-style: disc;
+}
+.story .prose li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+.story .prose li:last-child {
+  margin-bottom: 0;
+}
+
+/* Two-column beat image */
+.story-beat .section-grid > div:last-child img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Full-width trailing photo */
+.story-beat-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: var(--sp-md);
+}
+
+/* ══ WORK TRIO ══ */
+.work-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: var(--sp-md);
+}
+.work-trio-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.work-trio-caption {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-top: 10px;
+}
+
+/* ══ DEDICATION NOTE ══ */
+.dedication-note {
+  padding: 20px 24px;
+  background: var(--linen);
+  border-left: 3px solid var(--amber);
+  margin: 24px 0;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* ══ DELIVERS (dark teal feature section) ══ */
+.delivers {
+  background: var(--teal);
+  padding: var(--sp-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+.delivers::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: rgba(42, 122, 120, 0.25);
+  pointer-events: none;
+}
+.delivers .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark-on-teal eyebrow */
+.delivers .section-eyebrow-line {
+  background: rgba(255, 255, 255, 0.25);
+}
+.delivers .section-eyebrow-text {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Dark-on-teal headline */
+.delivers .section-headline {
+  color: #fff;
+}
+.delivers .section-headline em {
+  color: var(--teal-light);
+}
+
+/* ══ RECORD GRID — FOUR-COLUMN MODIFIER ══ */
+.record-grid--four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Record items on dark teal */
+.delivers .record-item {
+  background: rgba(255, 255, 255, 0.05);
+}
+.delivers .record-item::before {
+  background: var(--teal-light);
+}
+.delivers .record-item:hover::before {
+  background: var(--amber);
+}
+.delivers .record-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.delivers .record-num {
+  color: #fff;
+}
+.delivers .record-label {
+  color: var(--amber);
+}
+.delivers .record-desc {
+  color: rgba(255, 255, 255, 0.52);
+}
+
+/* ══ OUTCOMES GRID ══ */
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  margin-top: 2px;
+}
+.outcome-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 32px 28px;
+  border-top: 3px solid transparent;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.52);
+  transition:
+    background 0.25s,
+    border-color 0.25s;
+}
+.outcome-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-top-color: var(--amber);
+}
+.outcome-item strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* ══ STORY CLOSING ══ */
+.story-closing {
+  background: var(--white);
+  padding: var(--sp-xl) 0 var(--sp-lg);
+}
+.story-closing .prose {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.story-closing .prose p:last-child {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--teal-mid);
+}
+
+/* ══ ANIMATIONS ══ */
+.before-after-hero {
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+.before-after-hero:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.before-after-prose {
+  animation: fadeUp 0.7s ease 0.2s forwards;
+  opacity: 0;
+}
+.before-after-hero:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* ══ RESPONSIVE — TABLET (≤1024px) ══ */
+@media (max-width: 1024px) {
+  .record-grid--four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .before-after-hero {
+    max-height: 420px;
+  }
+  .before-after-hero img {
+    max-height: 420px;
+  }
+}
+
+/* ══ RESPONSIVE — MOBILE (≤768px) ══ */
+@media (max-width: 768px) {
+  .before-after-hero {
+    max-height: 320px;
+  }
+  .before-after-hero img {
+    max-height: 320px;
+  }
+  .before-after-caption {
+    font-size: 18px;
+    padding: 20px var(--pad-x);
+  }
+  .before-after-prose {
+    font-size: 16px;
+    text-align: left;
+  }
+  .work-trio {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .record-grid--four {
+    grid-template-columns: 1fr;
+  }
+  .outcomes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ══ RESPONSIVE — SMALL MOBILE (≤480px) ══ */
+@media (max-width: 480px) {
+  .before-after-hero {
+    max-height: 240px;
+  }
+  .before-after-hero img {
+    max-height: 240px;
+  }
+  .before-after-caption {
+    font-size: 16px;
+  }
+}

@@ -25,9 +25,12 @@
    preprocessor, or build step is used.
 
    Key shared utilities:
+      .page-header        → page header with jump nav
+      .prose              → editorial body text
       .section-grid       → standard 2-column editorial layout
       .section-eyebrow    → section label pattern
       .pull-quote         → editorial quote block
+      .record-grid        → stat card grid
       .dual-cta           → full-width action section
 
    Spacing system:
@@ -369,6 +372,7 @@ footer {
   line-height: 1.1;
   color: var(--teal);
   letter-spacing: -0.01em;
+  margin-bottom: var(--sp-sm);
 }
 .section-headline em {
   font-style: italic;
@@ -396,6 +400,193 @@ footer {
 }
 .pull-quote--light {
   color: rgba(255, 255, 255, 0.85);
+}
+
+/* ══ PAGE HEADER ══ */
+.page-header {
+  background: var(--teal-pale);
+  padding: var(--sp-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+.page-header .container {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: var(--gap-grid);
+  align-items: end;
+}
+.page-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--amber);
+}
+.page-header-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.page-header-eyebrow .eyebrow-line {
+  width: 28px;
+  height: 2px;
+  background: var(--amber);
+  flex-shrink: 0;
+}
+.page-header-eyebrow .eyebrow-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+}
+.page-header-headline {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(52px, 5.5vw, 84px);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--teal);
+  letter-spacing: -0.02em;
+}
+.page-header-headline em {
+  font-style: italic;
+  color: var(--teal-mid);
+}
+.page-header-sub {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-lt);
+  margin-top: 20px;
+  max-width: 540px;
+}
+
+/* Jump nav */
+.page-header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-self: end;
+  padding-bottom: 4px;
+}
+.page-header-nav-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(26, 92, 90, 0.4);
+  margin-bottom: 12px;
+}
+.jump-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--teal-mid);
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(26, 92, 90, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.2s;
+}
+.jump-link:last-child {
+  border-bottom: none;
+}
+.jump-link:hover {
+  color: var(--teal);
+}
+.jump-link::after {
+  content: "↓";
+  font-size: 11px;
+  opacity: 0.4;
+}
+
+/* Page-header entry animation */
+.page-header-content > * {
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+.page-header-content > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.page-header-content > *:nth-child(2) {
+  animation-delay: 0.24s;
+}
+.page-header-content > *:nth-child(3) {
+  animation-delay: 0.38s;
+}
+
+/* ══ PROSE ══ */
+.prose {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--text-lt);
+}
+.prose p + p {
+  margin-top: 20px;
+}
+.prose strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ══ RECORD CARDS ══ */
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.record-item {
+  background: var(--teal-pale);
+  padding: 44px 40px;
+  position: relative;
+}
+.record-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--teal-light);
+  transition: background 0.2s;
+}
+.record-item:hover::before {
+  background: var(--amber);
+}
+.record-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.record-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.record-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-lt);
 }
 
 /* ══ DUAL CTA ══ */
@@ -653,6 +844,12 @@ footer {
   .section-grid {
     gap: 48px;
   }
+  .page-header .container {
+    grid-template-columns: 1fr;
+  }
+  .page-header-nav {
+    display: none;
+  }
   footer {
     padding: 48px var(--pad-x) 32px;
   }
@@ -680,6 +877,12 @@ footer {
   .section-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .page-header-headline {
+    font-size: clamp(44px, 9vw, 72px);
+  }
+  .record-grid {
+    grid-template-columns: 1fr;
   }
   header {
     height: auto;
