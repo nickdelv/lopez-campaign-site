@@ -538,6 +538,21 @@ footer {
   font-weight: 600;
   color: var(--text);
 }
+.prose a,
+.timeline-desc a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: rgba(26, 92, 90, 0.35);
+  text-underline-offset: 3px;
+  transition:
+    text-decoration-color 0.2s,
+    color 0.2s;
+}
+.prose a:hover,
+.timeline-desc a:hover {
+  color: var(--amber);
+  text-decoration-color: var(--amber);
+}
 
 /* ══ RECORD CARDS ══ */
 .record-grid {

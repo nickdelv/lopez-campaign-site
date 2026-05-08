@@ -53,6 +53,9 @@
 }
 
 /* ══ STORY ══ */
+.story-header {
+  margin-bottom: var(--sp-lg);
+}
 .story {
   background: var(--white);
   padding: var(--sp-2xl) 0;
@@ -73,7 +76,21 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--amber);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+.story-beat-headline {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(28px, 2.6vw, 38px);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--teal);
+  letter-spacing: -0.01em;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.story-beat-headline em {
+  font-style: italic;
+  color: var(--teal-mid);
 }
 
 /* Prose list styling (Plan beat) */
@@ -242,6 +259,16 @@
 .story-closing {
   background: var(--white);
   padding: var(--sp-xl) 0 var(--sp-lg);
+}
+.story-closing .section-eyebrow,
+.story-closing .section-headline {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.story-closing .section-headline {
+  margin-bottom: var(--sp-md);
 }
 .story-closing .prose {
   max-width: 720px;
