@@ -436,6 +436,87 @@
   gap: 14px;
   margin-bottom: 16px;
 }
+
+/* ── Record Feature (case-study callout) ── */
+.record-feature {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--gap-grid);
+  align-items: center;
+  margin-bottom: 52px;
+  background: var(--teal-pale);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.record-feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--amber);
+}
+.record-feature-photo {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.record-feature-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.record-feature-photo:hover img {
+  transform: scale(1.03);
+}
+.record-feature-content {
+  padding: 48px 48px 48px 0;
+}
+.record-feature-content .section-eyebrow-text {
+  margin-bottom: 16px;
+}
+.record-feature-headline {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(32px, 3vw, 44px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--teal);
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.record-feature-headline em {
+  font-style: italic;
+  color: var(--teal-mid);
+}
+.record-feature-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-lt);
+  margin-bottom: 24px;
+}
+.record-feature-link {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--amber);
+  text-decoration: none;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+}
+.record-feature-link:hover {
+  color: var(--teal);
+  transform: translateX(2px);
+}
+
 /* ══ ANIMATIONS ══ */
 .hero-content > * {
   animation: fadeUp 0.7s ease forwards;
@@ -475,6 +556,15 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+  .record-feature {
+    grid-template-columns: 1fr;
+  }
+  .record-feature-photo img {
+    height: 320px;
+  }
+  .record-feature-content {
+    padding: 36px;
   }
 }
 
@@ -516,6 +606,12 @@
   }
   .endorsements-grid {
     grid-template-columns: 1fr;
+  }
+  .record-feature-photo img {
+    height: 240px;
+  }
+  .record-feature-content {
+    padding: 28px;
   }
 }
 
