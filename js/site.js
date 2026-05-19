@@ -64,4 +64,56 @@
   });
 
   loadInclude("site-footer", "components/footer.html?v=2.5");
+
+  // Endorsements carousel
+  var track = document.querySelector(".endorsements-track");
+  if (track) {
+    var cards = track.querySelectorAll(".endorsement-card");
+    var prevBtn = document.querySelector(".endorsements-arrow--prev");
+    var nextBtn = document.querySelector(".endorsements-arrow--next");
+    var offset = 0;
+
+    function getVisible() {
+      return window.innerWidth <= 768 ? 1 : 3;
+    }
+
+    function maxOffset() {
+      return Math.max(0, cards.length - getVisible());
+    }
+
+    function update() {
+      var visible = getVisible();
+      var gap = 3;
+      var containerWidth = track.parentElement.offsetWidth;
+      var cardWidth = (containerWidth - gap * (visible - 1)) / visible;
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].style.width = cardWidth + "px";
+      }
+      track.style.transform =
+        "translateX(-" + offset * (cardWidth + gap) + "px)";
+      prevBtn.disabled = offset === 0;
+      nextBtn.disabled = offset >= maxOffset();
+    }
+
+    prevBtn.addEventListener("click", function () {
+      if (offset > 0) {
+        offset--;
+        update();
+      }
+    });
+
+    nextBtn.addEventListener("click", function () {
+      if (offset < maxOffset()) {
+        offset++;
+        update();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (offset > maxOffset()) offset = maxOffset();
+      update();
+    });
+
+    update();
+  }
 })();
