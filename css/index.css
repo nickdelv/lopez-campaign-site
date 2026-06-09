@@ -297,19 +297,36 @@
 /* ══ ENDORSEMENTS ══ */
 .endorsements {
   background: var(--linen);
-  padding: var(--sp-xl) 0 0;
+  padding: var(--sp-xl) 0;
 }
-.endorsements-carousel {
-  position: relative;
-  overflow: hidden;
+.endorsement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  margin-bottom: var(--sp-md);
 }
-.endorsements-track {
-  display: flex;
-  gap: 3px;
-  transition: transform 0.4s ease;
+.endorsement-badge img {
+  display: block;
+  width: 160px;
+  height: auto;
+}
+.endorsement-badge span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-lt);
+}
+.endorsement-badge:hover span {
+  color: var(--teal);
+}
+.endorsement-cards-static {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: var(--sp-sm);
 }
 .endorsement-card {
-  flex-shrink: 0;
   background: var(--white);
   padding: 40px 32px;
   border-top: 3px solid var(--teal-light);
@@ -328,6 +345,15 @@
   color: var(--teal);
   margin-bottom: 24px;
 }
+.endorsement-quote a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--teal-light);
+  text-underline-offset: 2px;
+}
+.endorsement-quote a:hover {
+  text-decoration-color: var(--amber);
+}
 .endorsement-name {
   font-family: "DM Sans", sans-serif;
   font-size: 13px;
@@ -342,40 +368,6 @@
   color: var(--text-lt);
   margin-top: 3px;
   letter-spacing: 0.04em;
-}
-.endorsements-nav {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  padding: 24px 0 8px;
-}
-.endorsements-arrow {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--teal-light);
-  border-radius: 50%;
-  background: var(--white);
-  color: var(--teal);
-  font-size: 18px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition:
-    background 0.2s,
-    border-color 0.2s;
-}
-.endorsements-arrow:hover {
-  background: var(--teal-light);
-  border-color: var(--teal);
-}
-.endorsements-arrow:disabled {
-  opacity: 0.3;
-  cursor: default;
-}
-.endorsements-arrow:disabled:hover {
-  background: var(--white);
-  border-color: var(--teal-light);
 }
 
 /* ══ BIO TEASER ══ */
@@ -649,6 +641,12 @@
   }
   .record-feature-content {
     padding: 28px;
+  }
+  .endorsement-cards-static {
+    grid-template-columns: 1fr;
+  }
+  .endorsement-badge img {
+    width: 120px;
   }
 }
 

@@ -10,7 +10,7 @@
       });
   }
 
-  loadInclude("site-header", "components/header.html?v=2.5", function () {
+  loadInclude("site-header", "components/header.html?v=2.7", function () {
     // Active nav state
     var page = location.pathname.split("/").pop() || "index";
     if (page.includes(".")) page = page.split(".")[0]; // strip .html if present
@@ -63,7 +63,7 @@
     }
   });
 
-  loadInclude("site-footer", "components/footer.html?v=2.5");
+  loadInclude("site-footer", "components/footer.html?v=2.7");
 
   // Endorsements carousel
   var track = document.querySelector(".endorsements-track");

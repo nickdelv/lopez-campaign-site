@@ -1,0 +1,171 @@
+/* ══════════════════════════════════════════════
+   ENDORSEMENTS PAGE — page-specific styles only
+   Shared patterns (page-header, section-eyebrow,
+   section-headline, section-grid, record-item,
+   dual-cta, prose) come from shared.css.
+   ══════════════════════════════════════════════ */
+
+/* ══ FEATURED ENDORSEMENT ══ */
+.featured-endorsement {
+  background: var(--white);
+  padding: var(--sp-2xl) 0;
+}
+.mna-logo-container {
+  margin-top: var(--sp-sm);
+  max-width: 420px;
+}
+.mna-logo-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.endorsement-feature-quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--teal);
+  border-left: 3px solid var(--amber);
+  padding: 28px 0 28px 28px;
+  margin: 0;
+}
+.endorsement-feature-quote .endorsement-quote-text {
+  margin-bottom: 24px;
+}
+.endorsement-feature-quote .endorsement-name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+.endorsement-feature-quote .endorsement-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-lt);
+  margin-top: 3px;
+  letter-spacing: 0.04em;
+}
+
+/* ══ SELECT BOARD SECTION ══ */
+.select-board-section {
+  background: var(--linen);
+  padding: var(--sp-2xl) 0;
+}
+.section-intro {
+  max-width: 680px;
+}
+
+/* ══ ENDORSEMENT CARD GRID (static) ══ */
+.endorsement-cards-grid {
+  display: grid;
+  gap: 2px;
+  margin-top: var(--sp-sm);
+}
+
+/* card base — mirrors homepage card visuals */
+.endorsement-cards-grid .endorsement-card {
+  background: var(--white);
+  padding: 40px 32px;
+  border-top: 3px solid var(--teal-light);
+  transition: border-color 0.2s;
+}
+.endorsement-cards-grid .endorsement-card:hover {
+  border-top-color: var(--amber);
+}
+.endorsement-cards-grid .endorsement-quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--teal);
+  margin-bottom: 24px;
+}
+.endorsement-cards-grid .endorsement-quote a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--teal-light);
+  text-underline-offset: 2px;
+}
+.endorsement-cards-grid .endorsement-quote a:hover {
+  text-decoration-color: var(--amber);
+}
+.endorsement-cards-grid .endorsement-name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+.endorsement-cards-grid .endorsement-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-lt);
+  margin-top: 3px;
+  letter-spacing: 0.04em;
+}
+
+/* select board: 2-col with feature row */
+.endorsement-cards-grid--selectboard {
+  grid-template-columns: 1fr 1fr;
+}
+.endorsement-card--feature {
+  grid-column: 1 / -1;
+}
+
+/* ══ COMMUNITY VOICES ══ */
+.community-voices {
+  background: var(--white);
+  padding: var(--sp-2xl) 0;
+}
+.endorsement-cards-grid--community {
+  grid-template-columns: 1fr 1fr;
+}
+/* cards on white bg need linen bg for contrast */
+.community-voices .endorsement-card {
+  background: var(--linen);
+}
+
+/* ══ RESPONSIVE — TABLET (<=1024px) ══ */
+@media (max-width: 1024px) {
+  .featured-endorsement,
+  .select-board-section,
+  .community-voices {
+    padding: var(--sp-xl) 0;
+  }
+  .mna-logo-container {
+    max-width: 360px;
+  }
+}
+
+/* ══ RESPONSIVE — MOBILE (<=768px) ══ */
+@media (max-width: 768px) {
+  .endorsement-cards-grid--selectboard,
+  .endorsement-cards-grid--community {
+    grid-template-columns: 1fr;
+  }
+  .endorsement-card--feature {
+    grid-column: span 1;
+  }
+  .mna-logo-container {
+    max-width: 100%;
+  }
+}
+
+/* ══ RESPONSIVE — SMALL MOBILE (<=480px) ══ */
+@media (max-width: 480px) {
+  .endorsement-cards-grid .endorsement-card {
+    padding: 28px 24px;
+  }
+  .endorsement-feature-quote {
+    font-size: 20px;
+    padding: 24px 0 24px 20px;
+  }
+}
