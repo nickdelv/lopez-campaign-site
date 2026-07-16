@@ -5,19 +5,30 @@
    dual-cta, prose) come from shared.css.
    ══════════════════════════════════════════════ */
 
-/* ══ FEATURED ENDORSEMENT ══ */
-.featured-endorsement {
+/* ══ ORGANIZATION ENDORSEMENTS ══ */
+.org-endorsements {
   background: var(--white);
   padding: var(--sp-2xl) 0;
 }
-.mna-logo-container {
-  margin-top: var(--sp-sm);
-  max-width: 420px;
+.endorsement-cards-grid--orgs {
+  grid-template-columns: 1fr 1fr;
 }
-.mna-logo-container img {
+.endorsement-card--org {
+  display: flex;
+  flex-direction: column;
+}
+.org-logo-container {
+  margin-bottom: 24px;
+}
+.org-logo-container img {
   display: block;
-  width: 100%;
-  height: auto;
+  max-height: 80px;
+  width: auto;
+}
+.endorsement-card--org .endorsement-feature-quote {
+  flex: 1;
+  border-left: none;
+  padding-left: 0;
 }
 
 .endorsement-feature-quote {
@@ -135,27 +146,22 @@
 
 /* ══ RESPONSIVE — TABLET (<=1024px) ══ */
 @media (max-width: 1024px) {
-  .featured-endorsement,
+  .org-endorsements,
   .select-board-section,
   .community-voices {
     padding: var(--sp-xl) 0;
-  }
-  .mna-logo-container {
-    max-width: 360px;
   }
 }
 
 /* ══ RESPONSIVE — MOBILE (<=768px) ══ */
 @media (max-width: 768px) {
+  .endorsement-cards-grid--orgs,
   .endorsement-cards-grid--selectboard,
   .endorsement-cards-grid--community {
     grid-template-columns: 1fr;
   }
   .endorsement-card--feature {
     grid-column: span 1;
-  }
-  .mna-logo-container {
-    max-width: 100%;
   }
 }
 

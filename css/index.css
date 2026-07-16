@@ -299,17 +299,22 @@
   background: var(--linen);
   padding: var(--sp-xl) 0;
 }
+.endorsement-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: var(--sp-md);
+}
 .endorsement-badge {
   display: inline-flex;
   align-items: center;
   gap: 16px;
   text-decoration: none;
-  margin-bottom: var(--sp-md);
 }
 .endorsement-badge img {
   display: block;
-  width: 160px;
-  height: auto;
+  max-height: 36px;
+  width: auto;
 }
 .endorsement-badge span {
   font-family: "DM Sans", sans-serif;
