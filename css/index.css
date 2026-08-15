@@ -299,31 +299,26 @@
   background: var(--linen);
   padding: var(--sp-xl) 0;
 }
-.endorsement-badges {
+.endorsement-logos {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   margin-bottom: var(--sp-md);
 }
-.endorsement-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  text-decoration: none;
-}
-.endorsement-badge img {
+.endorsement-logos a {
   display: block;
-  max-height: 36px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.endorsement-logos a:hover {
+  opacity: 1;
+}
+.endorsement-logos img {
+  display: block;
+  max-height: 48px;
   width: auto;
-}
-.endorsement-badge span {
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-lt);
-}
-.endorsement-badge:hover span {
-  color: var(--teal);
 }
 .endorsement-cards-static {
   display: grid;
